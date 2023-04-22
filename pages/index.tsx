@@ -20,11 +20,13 @@ const Index: NextPage = () => {
       </Head>
       <Navbar />
       <header>
-        <div className="flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-20">
-          <h1 className="text-[6rem] font-bold text-black dark:text-white">
+        <div className="flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-10">
+          <h1 className="text-[6rem] font-bold text-black dark:text-white sm:text-4xl">
             Mad Science
           </h1>
-          <p className="text-5xl font-bold text-gray-500">Dolazi uskoro.</p>
+          <p className="text-5xl font-bold text-gray-500 sm:text-2xl">
+            Dolazi uskoro.
+          </p>
         </div>
       </header>
       <main className="flex flex-col items-center justify-center gap-20 px-20">
