@@ -42,6 +42,8 @@ export default class MadScienceWebsiteDocument extends Document {
           {/* Microsoft-specific tags */}
           <meta name="msapplication-TileImage" content="/favicon/favicon.ico" />
           <meta name="msapplication-TileColor" content="#02B6EB" />
+          {/* Twitter-specific tags */}
+          <meta name="twitter:card" content="summary_large_image" />
           {/* Random tags */}
           <meta name="theme-color" content="#02B6EB" />
           <meta charSet="UTF-8" />
