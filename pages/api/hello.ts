@@ -3,9 +3,9 @@
 import type { NextApiResponse } from "next";
 
 type Data = {
-  vrijednost: string;
+  name: string;
 };
 
 export default function handler(res: NextApiResponse<Data>) {
-  res.status(200).json({ vrijednost: "Dobrodošli na Mad Science API :)" });
+  res.status(200).json({ name: "Dobrodošli na Mad Science API :)" });
 }
