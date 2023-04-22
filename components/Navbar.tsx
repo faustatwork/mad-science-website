@@ -9,16 +9,7 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <Link href={""}>Link</Link>
-      </li>
-      <li>
-        <Link href={""}>Link</Link>
-      </li>
-      <li>
-        <Link href={""}>Link</Link>
-      </li>
-      <li>
-        <Link href={""}>Link</Link>
+        <Link href={"/telegram"}>Telegram</Link>
       </li>
     </>
   );
@@ -52,19 +43,19 @@ const Navbar = () => {
             </svg>
           </button>
           <Link href={"/"} className="text-2xl font-extrabold">
-            website name
+            Mad Science
           </Link>
         </div>
         <Link
           href={"/"}
           className={isWindowSizeSmall ? "hidden" : "text-2xl font-extrabold"}
         >
-          website name
+          Mad Science
         </Link>
         <ul
           className={
             isWindowSizeSmall
-              ? "mt-8 h-64 w-full list-none flex-col items-center justify-center gap-10 bg-[#2634ae] text-white dark:bg-[#12184d]" +
+              ? "mt-8 h-64 w-full list-none flex-col items-center justify-center gap-10 bg-gray-600 text-white" +
                 (isOpen ? " flex" : " hidden")
               : "flex list-none flex-row items-center justify-center gap-10"
           }

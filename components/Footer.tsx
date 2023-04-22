@@ -1,9 +1,10 @@
 import Link from "next/link";
+import SwitchTheme from "./SwitchTheme";
 
 const Footer = () => {
   const footerLinks = (
-    <Link href="" target="_blank" rel="noopener noreferrer">
-      Footer
+    <Link href="/telegram" target="_blank" rel="noopener noreferrer">
+      Telegram
     </Link>
   );
 
@@ -11,6 +12,7 @@ const Footer = () => {
     <>
       <footer className="flex h-fit w-full flex-row flex-wrap items-center justify-center gap-20 py-20 px-16 text-black dark:text-white">
         {footerLinks}
+        <SwitchTheme />
       </footer>
     </>
   );
