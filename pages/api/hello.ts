@@ -1,11 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-import type { NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
-  value: string;
+  name: string;
 };
 
-export default function handler(res: NextApiResponse<Data>) {
-  res.status(200).json({ value: "Dobrodošli na Mad Science API :)" });
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>,
+) {
+  res.status(200).json({ name: "Dobrodošli na Mad Science API :)" });
 }
