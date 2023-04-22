@@ -21,13 +21,16 @@ const Index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>website</title>
-        <meta property="title" content="website" key="title" />
-        <meta property="og:title" content="website" key="title" />
-        <meta name="description" content="website description" />
-        <meta name="og:description" content="website description" />
-        <meta property="og:url" content="website url" />
-        <link rel="canonical" href="website url" />
+        <title>Mad Science</title>
+        <meta property="title" content="Mad Science" key="title" />
+        <meta property="og:title" content="Mad Science" key="title" />
+        <meta name="description" content="Mad Science" />
+        <meta name="og:description" content="Mad Science" />
+        <meta
+          property="og:url"
+          content="https://mad-science-website.vercel.app"
+        />
+        <link rel="canonical" href="https://mad-science-website.vercel.app" />
       </Head>
       <Navbar />
       <header>

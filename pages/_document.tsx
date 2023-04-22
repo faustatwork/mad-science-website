@@ -1,14 +1,17 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
-export default class WebsiteDocument extends Document {
+export default class MadScienceWebsiteDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="sr">
         <Head>
           {/* Meta tags */}
-          <meta name="keywords" content="keywords" />
-          <meta property="og:image" content="image url" />
-          <meta property="og:site_name" content="site name" />
+          <meta
+            name="keywords"
+            content="mad science, mad, science, trading, crypto, financial, financije, ulaganje, investments, investing, investicije, kurs, course, tecaj, zarada, profit, balkan, uspjeh, forex, novac, financijska sloboda"
+          />
+          <meta property="og:image" content="/images/image.webp" />
+          <meta property="og:site_name" content="Mad Science" />
           {/* Favicons */}
           <link rel="icon" href="/favicon/favicon.ico" />
           <link
@@ -33,14 +36,14 @@ export default class WebsiteDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
-            content="#ffffff"
+            content="#02B6EB"
           />
-          <meta name="apple-mobile-web-app-title" content="site name" />
+          <meta name="apple-mobile-web-app-title" content="Mad Science" />
           {/* Microsoft-specific tags */}
           <meta name="msapplication-TileImage" content="/favicon/favicon.ico" />
-          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileColor" content="#02B6EB" />
           {/* Random tags */}
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="theme-color" content="#02B6EB" />
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>

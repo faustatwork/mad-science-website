@@ -8,13 +8,16 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>website</title>
-        <meta property="title" content="website" key="title" />
-        <meta property="og:title" content="website" key="title" />
-        <meta name="description" content="website description" />
-        <meta name="og:description" content="website description" />
-        <meta property="og:url" content="website url" />
-        <link rel="canonical" href="website url" />
+        <title>Mad Science - 404</title>
+        <meta property="title" content="Mad Science - 404" key="title" />
+        <meta property="og:title" content="Mad Science - 404" key="title" />
+        <meta name="description" content="Mad Science" />
+        <meta name="og:description" content="Mad Science" />
+        <meta
+          property="og:url"
+          content="https://mad-science-website.vercel.app"
+        />
+        <link rel="canonical" href="https://mad-science-website.vercel.app" />
       </Head>
       <div className="flex min-h-screen w-screen flex-col items-center justify-center">
         <main className="flex w-full flex-1 flex-col items-center justify-center gap-10 px-20 text-center">

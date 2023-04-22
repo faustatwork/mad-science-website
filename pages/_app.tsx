@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-function Website({ Component, pageProps }: AppProps) {
+function MadScienceWebsite({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -25,4 +25,4 @@ function Website({ Component, pageProps }: AppProps) {
   );
 }
 
-export default Website;
+export default MadScienceWebsite;

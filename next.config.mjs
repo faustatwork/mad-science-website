@@ -3,6 +3,15 @@
 const config = {
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: "/telegram",
+        destination: "https://t.me/MadScience618",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default config;

@@ -1,7 +1,7 @@
 {
-  "name": "website",
-  "author": "author",
-  "description": "website",
+  "name": "mad-science-website",
+  "author": "Marin Heđeš <@sincerelyfaust>",
+  "description": "A website for the Mad Science trading group.",
   "private": true,
   "scripts": {
     "dev": "next dev",

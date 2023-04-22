@@ -9,5 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  res.status(200).json({ name: "Welcome to the API." });
+  res.status(200).json({ name: "Dobrodošli na Mad Science API :)" });
 }
