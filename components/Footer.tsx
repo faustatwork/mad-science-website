@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="py-20 flex h-fit w-full flex-row flex-wrap items-center justify-center gap-20 px-16 text-black dark:text-white">
+      <footer className="flex h-fit w-full flex-row flex-wrap items-center justify-center gap-20 py-20 px-16 text-black dark:text-white">
         {footerLinks}
       </footer>
     </>
