@@ -1,10 +1,11 @@
 import React from "react";
-import * as Dialog from "@radix-ui/react-dialog";
-import { X } from "lucide-react";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import qrDark from "../public/images/qr-dark.webp";
 import qrLight from "../public/images/qr-light.webp";
-import { useTheme } from "next-themes";
+import CopyBlock from "./CopyBlock";
 
 interface DialogProps {
   isOpen: boolean;
@@ -15,27 +16,60 @@ const StyledDialog = ({ isOpen, setIsOpen }: DialogProps) => {
   const theme = useTheme();
 
   return (
-    <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
-      <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black/75 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
-        <Dialog.Content className="fixed top-[50%] left-[50%] flex h-[40vh] max-h-[85vh] w-[70vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center rounded-[6px] bg-white p-[50px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:bg-zinc-900">
-          <Image
-            src={theme.resolvedTheme === "dark" ? qrDark : qrLight}
-            alt="qr code for payment address"
-            width={200}
-            height={200}
-          />
-          <Dialog.Close asChild>
-            <button
-              className="absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full text-black hover:bg-gray-300 focus:shadow-[0_0_0_2px] focus:shadow-gray-300 focus:outline-none dark:text-white dark:hover:bg-gray-600 dark:focus:shadow-gray-600"
-              aria-label="Close"
-            >
-              <X size={14} />
-            </button>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
+    <>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={setIsOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/75 backdrop-blur-sm" />
+          </Transition.Child>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="flex w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-2xl bg-white p-10 text-left align-middle shadow-xl transition-all dark:bg-zinc-900">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
+                  >
+                    Kupi kurs
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-400">Opis</p>
+                  </div>
+                  <div className="mt-4">
+                    <Image
+                      src={theme.resolvedTheme === "dark" ? qrDark : qrLight}
+                      alt="qr code for payment address"
+                      width={200}
+                      height={200}
+                    />
+                  </div>
+                  <div className="mt-8">
+                    <p className="text-sm text-gray-600">USDT adresa</p>
+                    <CopyBlock value="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" />
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+    </>
   );
 };
 
