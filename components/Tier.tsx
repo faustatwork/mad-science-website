@@ -11,7 +11,7 @@ interface TierProps {
   description: string;
   price: number;
   features: string[];
-  model: "jendokratno" | "mjesečno";
+  model: "jednokratno" | "mjesečno";
 }
 
 const Tier = ({ items }: TierArray) => {

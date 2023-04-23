@@ -39,7 +39,7 @@ const Index: NextPage = () => {
                 description: "Opis",
                 price: 44,
                 features: ["Live trading", "Item", "Item"],
-                model: "jendokratno",
+                model: "jednokratno",
               },
               {
                 title: "Level 2",
@@ -53,7 +53,7 @@ const Index: NextPage = () => {
                 description: "Opis",
                 price: 999,
                 features: ["Live trading", "Item", "Item"],
-                model: "jendokratno",
+                model: "jednokratno",
               },
             ]}
           />
