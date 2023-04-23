@@ -38,12 +38,14 @@ interface ButtonProps {
   color?: "primary" | "secondary";
   disabled?: boolean;
   icon?: ReactNode;
+  action?: () => void;
 }
 
-const Button = ({ text, size, color, disabled, icon }: ButtonProps) => {
+const Button = ({ text, size, color, disabled, icon, action }: ButtonProps) => {
   return (
     <button
       disabled={disabled}
+      onClick={action}
       className={button({ size: size, color: color, disabled: disabled })}
     >
       {icon ? (
