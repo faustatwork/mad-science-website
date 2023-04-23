@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Tier from "../components/Tier";
 
 const Index: NextPage = () => {
   return (
@@ -30,7 +31,33 @@ const Index: NextPage = () => {
         </div>
       </header>
       <main className="flex flex-col items-center justify-center gap-20 px-20">
-        <section></section>
+        <section id="kupi">
+          <Tier
+            items={[
+              {
+                title: "Level 1",
+                description: "Opis",
+                price: 44,
+                features: ["Live trading", "Item", "Item"],
+                model: "jendokratno",
+              },
+              {
+                title: "Level 2",
+                description: "Opis",
+                price: 80,
+                features: ["Live trading", "Item", "Item"],
+                model: "mjesečno",
+              },
+              {
+                title: "Level 3",
+                description: "Opis",
+                price: 999,
+                features: ["Live trading", "Item", "Item"],
+                model: "jendokratno",
+              },
+            ]}
+          />
+        </section>
       </main>
       <Footer />
     </>
