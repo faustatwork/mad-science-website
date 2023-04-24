@@ -24,15 +24,15 @@ const Tier = ({ items }: TierArray) => {
       <div className="flex flex-row flex-wrap items-center justify-center gap-20">
         {items.map((item, index) => {
           const recommended = item.recommended
-            ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 "
-            : "border border-gray-100 shadow dark:border-gray-600 ";
+            ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 p-12 "
+            : "border border-gray-100 shadow dark:border-gray-600 py-6 px-12  ";
 
           return (
             <>
               <div
                 className={
                   recommended +
-                  "flex w-80 flex-col rounded-lg bg-white p-6 text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:p-8 sm:w-full sm:max-w-sm"
+                  "flex w-80 flex-col rounded-lg bg-white text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:p-8 sm:w-full sm:max-w-sm"
                 }
                 key={index}
               >
