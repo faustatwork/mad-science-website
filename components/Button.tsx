@@ -11,24 +11,18 @@ const button = tv({
         "bg-purple-600 hover:bg-purple-700 text-white dark:focus:ring-purple-900 focus:ring-4 focus:ring-purple-200",
     },
     size: {
-      sm: "text-sm",
-      md: "text-base",
+      sm: "text-sm px-3 py-2",
+      md: "text-base px-3 py-2",
       lg: "px-4 py-3 text-lg",
     },
     disabled: {
       true: "opacity-50 bg-gray-500 pointer-events-none",
     },
   },
-  compoundVariants: [
-    {
-      size: ["sm", "md"],
-      class: "px-3 py-2",
-    },
-  ],
   defaultVariants: {
     size: "md",
     color: "primary",
-    disabled: false,
+    disabled: "false",
   },
 });
 
