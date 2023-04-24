@@ -11,16 +11,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      "2xl": { max: "1620px" },
+      "xl": { max: "1486px" },
+      "lg": { max: "1073px" },
+      "md": { max: "990px" },
+      "sm": { max: "800px" },
+    },
     extend: {
       fontFamily: {
         primary: ["var(--font-inter)", ...fontFamily.sans],
         serif: ["var(--lora-inter)", ...fontFamily.serif],
-      },
-      screens: {
-        "2xl": { max: "1620px" },
-        "xl": { max: "1486px" },
-        "lg": { max: "1073px" },
-        "sm": { max: "800px" },
       },
     },
   },
