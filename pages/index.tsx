@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Tier from "../components/Tier";
-import StyledDisclosure from "../components/Disclosure";
+import Disclosure from "../components/Disclosure";
 
 const Index: NextPage = () => {
   return (
@@ -69,7 +69,7 @@ const Index: NextPage = () => {
           <p className="text-lg text-gray-500 dark:text-gray-400">
             Svi odgovori na sva vaša pitanja.
           </p>
-          <StyledDisclosure
+          <Disclosure
             content={[
               { question: "Pitanje 1", answer: "Odgovor 1" },
               { question: "Pitanje 2", answer: "Odgovor 2" },

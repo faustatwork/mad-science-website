@@ -7,7 +7,7 @@ interface DisclosureProps {
   content: DisclosureItems[];
 }
 
-const StyledDisclosure = ({ content }: DisclosureProps) => {
+const Disclosure = ({ content }: DisclosureProps) => {
   return (
     <div className="w-[70vw] divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white dark:divide-gray-600 dark:border-gray-600 dark:bg-gray-800">
       {content.map((item, index) => {
@@ -64,4 +64,4 @@ const StyledDisclosure = ({ content }: DisclosureProps) => {
   );
 };
 
-export default StyledDisclosure;
+export default Disclosure;
