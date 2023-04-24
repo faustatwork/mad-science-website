@@ -3,6 +3,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Tier from "../components/Tier";
+import StyledDisclosure from "../components/Disclosure";
 
 const Index: NextPage = () => {
   return (
@@ -55,6 +56,19 @@ const Index: NextPage = () => {
                 features: ["Live trading", "Item", "Item"],
                 model: "jednokratno",
               },
+            ]}
+          />
+        </section>
+        <section
+          className="flex flex-col items-start justify-start gap-5"
+          id="pitanja"
+        >
+          <p className="text-3xl font-bold">Pitanja i odgovori</p>
+          <p className="text-lg">Svi odgovori na sva vaša pitanja.</p>
+          <StyledDisclosure
+            content={[
+              { question: "Pitanje 1", answer: "Odgovor 1" },
+              { question: "Pitanje 2", answer: "Odgovor 2" },
             ]}
           />
         </section>
