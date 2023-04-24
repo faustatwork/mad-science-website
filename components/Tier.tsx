@@ -12,6 +12,7 @@ interface TierProps {
   price: number;
   features: string[];
   model: "jednokratno" | "mjesečno";
+  recommended?: boolean;
 }
 
 const Tier = ({ items }: TierArray) => {
@@ -31,10 +32,17 @@ const Tier = ({ items }: TierArray) => {
         </div>
         <div className="flex flex-row flex-wrap items-center justify-center gap-10">
           {items.map((item, index) => {
+            const recommended = item.recommended
+              ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 "
+              : "border border-gray-100 shadow dark:border-gray-600 ";
+
             return (
               <>
                 <div
-                  className="flex w-80 flex-col rounded-lg border border-gray-100 bg-white p-6 text-center text-gray-900 shadow dark:border-gray-600 dark:bg-gray-800 dark:text-white xl:p-8"
+                  className={
+                    recommended +
+                    "flex w-80 flex-col rounded-lg bg-white p-6 text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:p-8"
+                  }
                   key={index}
                 >
                   <h3 className="mb-4 text-2xl font-semibold">{item.title}</h3>

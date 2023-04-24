@@ -48,6 +48,7 @@ const Index: NextPage = () => {
                 price: 80,
                 features: ["Live trading", "Item", "Item"],
                 model: "mjesečno",
+                recommended: true,
               },
               {
                 title: "Level 3",
