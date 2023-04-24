@@ -32,7 +32,7 @@ const Index: NextPage = () => {
           </p>
         </div>
       </header>
-      <main className="flex flex-col items-center justify-center gap-20 px-20">
+      <main className="flex flex-col items-center justify-center gap-40 px-20 sm:px-10">
         <section
           id="recenzije"
           className="flex flex-col items-center justify-center gap-10"
@@ -78,7 +78,14 @@ const Index: NextPage = () => {
             ]}
           />
         </section>
-        <section id="kupi">
+        <section
+          id="kupi"
+          className="flex flex-col items-center justify-center gap-8 text-center"
+        >
+          <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            Naslov
+          </p>
+          <p className="text-lg text-gray-500 dark:text-gray-400">Opis</p>
           <Tier
             items={[
               {
@@ -107,21 +114,23 @@ const Index: NextPage = () => {
           />
         </section>
         <section
-          className="flex flex-col items-start justify-start gap-5"
+          className="flex w-full items-center justify-center"
           id="pitanja"
         >
-          <p className="text-3xl font-bold text-black dark:text-white">
-            Pitanja i odgovori
-          </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            Svi odgovori na sva vaša pitanja.
-          </p>
-          <Disclosure
-            content={[
-              { question: "Pitanje 1", answer: "Odgovor 1" },
-              { question: "Pitanje 2", answer: "Odgovor 2" },
-            ]}
-          />
+          <div className="flex w-10/12 flex-col items-start justify-start gap-5 sm:w-full">
+            <p className="text-3xl font-bold text-black dark:text-white">
+              Pitanja i odgovori
+            </p>
+            <p className="text-lg text-gray-500 dark:text-gray-400">
+              Svi odgovori na sva vaša pitanja.
+            </p>
+            <Disclosure
+              content={[
+                { question: "Pitanje 1", answer: "Odgovor 1" },
+                { question: "Pitanje 2", answer: "Odgovor 2" },
+              ]}
+            />
+          </div>
         </section>
       </main>
       <Footer />

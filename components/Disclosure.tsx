@@ -9,7 +9,7 @@ interface DisclosureProps {
 
 const Disclosure = ({ content }: DisclosureProps) => {
   return (
-    <div className="w-[60vw] divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white dark:divide-gray-600 dark:border-gray-600 dark:bg-gray-800">
+    <div className="w-full divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white dark:divide-gray-600 dark:border-gray-600 dark:bg-gray-800">
       {content.map((item, index) => {
         return (
           <>
