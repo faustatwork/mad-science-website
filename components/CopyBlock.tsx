@@ -23,7 +23,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
     );
   };
 
-  const btnStyle = copied ? "bg-gray-300 dark:bg-gray-600 text-white" : "";
+  const btnStyle = copied ? "bg-gray-300 dark:bg-gray-600 " : "";
   return (
     <div className="my-5 text-center">
       <button
@@ -33,7 +33,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
           "-mt-8 w-80 rounded border border-gray-300 p-3 text-sm text-black transition hover:bg-gray-200 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
         }
       >
-        {copied ? "Copied" : value}
+        {copied ? "Kopirano" : value}
       </button>
     </div>
   );
