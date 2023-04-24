@@ -117,7 +117,7 @@ const Index: NextPage = () => {
           className="flex w-full items-center justify-center"
           id="pitanja"
         >
-          <div className="flex w-10/12 flex-col items-start justify-start gap-5 sm:w-full">
+          <div className="flex w-10/12 max-w-5xl flex-col items-start justify-start gap-5 sm:w-full">
             <p className="text-3xl font-bold text-black dark:text-white">
               Pitanja i odgovori
             </p>
