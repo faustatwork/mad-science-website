@@ -23,14 +23,14 @@ export default function CopyBlock({ value }: CopyBlockProps) {
     );
   };
 
-  const btnStyle = copied ? "bg-gray-300 dark:bg-gray-600 " : "";
+  const btnStyle = copied ? "bg-gray-200 dark:bg-gray-800 " : "";
   return (
     <div className="my-5 text-center">
       <button
         onClick={copyToClipboard}
         className={
           btnStyle +
-          "-mt-8 w-80 rounded border border-gray-300 p-3 text-sm text-black transition hover:bg-gray-200 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
+          "-mt-8 w-80 rounded border border-gray-300 p-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
         }
       >
         {copied ? "Kopirano" : value}
