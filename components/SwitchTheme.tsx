@@ -19,9 +19,9 @@ const SwitchTheme = () => {
       value={theme}
       onChange={e => setTheme(e.target.value)}
     >
-      <option value="system">🖥 System</option>
-      <option value="dark">🌚 Dark</option>
-      <option value="light">🌞 Light</option>
+      <option value="system">🖥 Sustav</option>
+      <option value="dark">🌚 Tamna</option>
+      <option value="light">🌞 Svijetla</option>
     </select>
   );
 };
