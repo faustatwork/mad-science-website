@@ -63,8 +63,12 @@ const Index: NextPage = () => {
           className="flex flex-col items-start justify-start gap-5"
           id="pitanja"
         >
-          <p className="text-3xl font-bold">Pitanja i odgovori</p>
-          <p className="text-lg">Svi odgovori na sva vaša pitanja.</p>
+          <p className="text-3xl font-bold text-black dark:text-white">
+            Pitanja i odgovori
+          </p>
+          <p className="text-lg text-gray-500 dark:text-gray-400">
+            Svi odgovori na sva vaša pitanja.
+          </p>
           <StyledDisclosure
             content={[
               { question: "Pitanje 1", answer: "Odgovor 1" },
