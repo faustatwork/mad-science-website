@@ -21,7 +21,7 @@ const Tier = ({ items }: TierArray) => {
   return (
     <>
       <StyledDialog isOpen={openDialog} setIsOpen={setOpenDialog} />
-      <div className="flex flex-row flex-wrap items-center justify-center gap-10">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-20">
         {items.map((item, index) => {
           const recommended = item.recommended
             ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 "
@@ -32,7 +32,7 @@ const Tier = ({ items }: TierArray) => {
               <div
                 className={
                   recommended +
-                  "flex w-80 flex-col rounded-lg bg-white p-6 text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:p-8 sm:w-full"
+                  "flex w-80 flex-col rounded-lg bg-white p-6 text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:p-8 sm:w-full sm:max-w-sm"
                 }
                 key={index}
               >
