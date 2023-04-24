@@ -7,12 +7,12 @@ import qrDark from "../public/images/qr-dark.webp";
 import qrLight from "../public/images/qr-light.webp";
 import CopyBlock from "./CopyBlock";
 
-interface DialogProps {
+interface PaymentDialogProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }
 
-const StyledDialog = ({ isOpen, setIsOpen }: DialogProps) => {
+const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
   const theme = useTheme();
 
   return (
@@ -73,4 +73,4 @@ const StyledDialog = ({ isOpen, setIsOpen }: DialogProps) => {
   );
 };
 
-export default StyledDialog;
+export default PaymentDialog;

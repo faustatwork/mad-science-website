@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
-import StyledDialog from "./Dialog";
+import StyledDialog from "./PaymentDialog";
 
 interface TierArray {
   items: TierProps[];
@@ -57,7 +57,6 @@ const Tier = ({ items }: TierArray) => {
                       /{item.model}
                     </span>
                   </div>
-
                   <ul role="list" className="mb-8 space-y-4 text-left">
                     {item.features.map((feature, index) => {
                       return (
