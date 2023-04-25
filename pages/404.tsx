@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 
-const Home: NextPage = () => {
+const Error404: NextPage = () => {
   return (
     <>
       <Head>
@@ -42,4 +42,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Error404;
