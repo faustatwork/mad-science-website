@@ -8,7 +8,7 @@ const button = tv({
       primary:
         "bg-blue-600 hover:bg-blue-700 text-white dark:focus:ring-blue-900 focus:ring-4 focus:ring-blue-200 transition hover:scale-105 hover:shadow-xl",
       secondary:
-        "bg-purple-600 hover:bg-purple-700 text-white dark:focus:ring-purple-900 focus:ring-4 focus:ring-purple-200",
+        "border-blue-600 border-2 hover:bg-blue-700 dark:focus:ring-blue-900 focus:ring-4 focus:ring-blue-200 transition hover:scale-105 hover:shadow-xl text-blue-600 hover:text-white",
     },
     size: {
       sm: "text-sm px-3 py-2",
