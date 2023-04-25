@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import Tier from "../components/Tier";
 import Disclosure from "../components/Disclosure";
 import Testimonial from "../components/Testimonial";
+import Link from "next/link";
+import { ShoppingCart, Info } from "lucide-react";
 
 const Index: NextPage = () => {
   return (
@@ -24,12 +26,32 @@ const Index: NextPage = () => {
       <Navbar />
       <header>
         <div className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-10">
-          <h1 className="text-[6rem] font-bold text-[#80EAEA] sm:text-4xl">
+          <h1 className="text-8xl font-bold text-[#80EAEA] sm:text-4xl">
             Mad Science
           </h1>
           <p className="text-5xl font-bold text-gray-500 sm:text-2xl">
             Dolazi uskoro.
           </p>
+          <div className="flex flex-row items-center justify-center gap-10">
+            <Link
+              className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              href={"#kupi"}
+            >
+              <span className="mr-2 inline-block align-middle">
+                <ShoppingCart size={18} strokeWidth={3} />
+              </span>
+              Kupi kurs
+            </Link>
+            <Link
+              className="rounded-md border-2 border-blue-600 px-5 py-3 text-lg font-medium text-blue-600 transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              href={"#onama"}
+            >
+              <span className="mr-2 inline-block align-middle">
+                <Info size={18} strokeWidth={3} />
+              </span>
+              O nama
+            </Link>
+          </div>
         </div>
       </header>
       <main className="flex flex-col items-center justify-center gap-40 px-20 sm:px-10">
