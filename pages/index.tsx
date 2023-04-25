@@ -32,9 +32,9 @@ const Index: NextPage = () => {
           <p className="text-5xl font-bold text-gray-500 sm:text-2xl">
             Dolazi uskoro.
           </p>
-          <div className="flex flex-row items-center justify-center gap-10">
+          <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
             <Link
-              className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
               href={"#kupi"}
             >
               <span className="mr-2 inline-block align-middle">
@@ -43,7 +43,7 @@ const Index: NextPage = () => {
               Kupi kurs
             </Link>
             <Link
-              className="rounded-md border-2 border-blue-600 px-5 py-3 text-lg font-medium text-blue-600 transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              className="rounded-md border-2 border-blue-600 px-5 py-3 text-lg font-medium text-blue-600 transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
               href={"#onama"}
             >
               <span className="mr-2 inline-block align-middle">
