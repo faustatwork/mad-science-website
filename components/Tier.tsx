@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import StyledDialog from "./PaymentDialog";
+import { ShoppingCart } from "lucide-react";
 
 interface TierArray {
   items: TierProps[];
@@ -74,6 +75,7 @@ const Tier = ({ items }: TierArray) => {
                   size={"lg"}
                   color={"primary"}
                   action={() => setOpenDialog(!openDialog)}
+                  icon={<ShoppingCart size={18} strokeWidth={3} />}
                 />
               </div>
             </>
