@@ -23,7 +23,12 @@ module.exports = {
         primary: ["var(--font-inter)", ...fontFamily.sans],
         serif: ["var(--lora-inter)", ...fontFamily.serif],
       },
+      colors: {
+        brand: {
+          main: "#80EAEA",
+        },
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
