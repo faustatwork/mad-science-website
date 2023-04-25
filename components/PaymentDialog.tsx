@@ -43,7 +43,7 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
               >
                 <Dialog.Panel className="flex w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-2xl bg-white p-10 text-left align-middle shadow-xl transition-all dark:bg-zinc-900">
                   <Dialog.Title
-                    as="h3"
+                    as="p"
                     className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
                   >
                     Kupi kurs

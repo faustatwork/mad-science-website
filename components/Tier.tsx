@@ -36,7 +36,7 @@ const Tier = ({ items }: TierArray) => {
                 }
                 key={index}
               >
-                <h3 className="mb-4 text-2xl font-semibold">{item.title}</h3>
+                <p className="mb-4 text-2xl font-semibold">{item.title}</p>
                 <p className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
                   {item.description}
                 </p>
