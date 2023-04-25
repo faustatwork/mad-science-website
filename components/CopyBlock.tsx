@@ -30,7 +30,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
         onClick={copyToClipboard}
         className={
           btnStyle +
-          "-mt-8 w-80 rounded border border-gray-300 p-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          "-mt-8 w-80 truncate rounded border border-gray-300 p-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
         }
       >
         {copied ? "Kopirano" : value}
