@@ -12,14 +12,14 @@ export default function CopyBlock({ value }: CopyBlockProps) {
     navigator.clipboard.writeText(value).then(
       () => {
         setCopied(true);
-        // changing back to default state after 2 seconds.
+        // Changing back to default state after 2 seconds
         setTimeout(() => {
           setCopied(false);
         }, 2000);
       },
       err => {
         // eslint-disable-next-line no-console
-        console.log("failed to copy", err.mesage);
+        console.log("Failed to copy: ", err.mesage);
       },
     );
   };
