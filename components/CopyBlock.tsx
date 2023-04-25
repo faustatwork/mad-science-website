@@ -25,7 +25,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
 
   const btnStyle = copied ? "bg-gray-200 dark:bg-gray-800 " : "";
   return (
-    <div className="my-5 text-center">
+    <div className="text-center">
       <button
         onClick={copyToClipboard}
         className={
