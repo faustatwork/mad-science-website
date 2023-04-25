@@ -11,6 +11,9 @@ const Navbar = () => {
       <li>
         <Link href={"/telegram"}>Telegram</Link>
       </li>
+      <li>
+        <Link href={"/discord"}>Discord</Link>
+      </li>
     </>
   );
 

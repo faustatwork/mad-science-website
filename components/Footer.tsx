@@ -3,9 +3,14 @@ import SwitchTheme from "./SwitchTheme";
 
 const Footer = () => {
   const footerLinks = (
-    <Link href="/telegram" target="_blank" rel="noopener noreferrer">
-      Telegram
-    </Link>
+    <>
+      <Link href="/telegram" target="_blank" rel="noopener noreferrer">
+        Telegram
+      </Link>
+      <Link href="/discord" target="_blank" rel="noopener noreferrer">
+        Discord
+      </Link>
+    </>
   );
 
   return (
