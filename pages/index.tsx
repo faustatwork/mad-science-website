@@ -149,41 +149,41 @@ const Index: NextPage = () => {
             <Disclosure
               content={[
                 {
-                  question: "ŠTA JE MAD SCIENCE?",
+                  question: "Šta je Mad Science?",
                   answer:
                     "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
                 },
                 {
-                  question: "ŠTA MOŽEMO NAUČITI?",
+                  question: "Šta možemo naučiti?",
                   answer:
                     "Edukacija je podeljena na dva dela. Prvi je namenjen početnicima sa osnovnim ili nikakvim nivoom znanja tehničke analize. Tu mogu naučiti najbitnije termine i pojmove koje su im najpotrebniji, ono esencijalno, zato se i zove 'Essentials'. Drugi deo je namenjen naprednijim trejderima koji žele da upotpune ili usavrše svoje već stečeno znanje i podignu ga na viši nivo. Posmatramo tržište iz dva različita ugla, to su Algo i Mad koncepti trejdinga.",
                 },
                 {
-                  question: "ŠTA SADRŽI MAD ESSENTIALS?",
+                  question: "Šta sadrži Mad Essentials?",
                   answer:
                     "Bazirali smo se na čisti 'price action', to je nešto što svaki početnik prvo treba da savlada da bi mogao da se opredeli na koju je stranu marketa, bullish ili bearish. Nismo želeli da puno komplikujemo stvari već da to odradimo konkretno i precizno.",
                 },
                 {
-                  question: "KOJA JE RAZLIKA IZMEDJU ALGO I MAD KONCEPTA?",
+                  question: "Koja je razlika izmedju Algo i Mad koncepta?",
                   answer:
                     "Algo koncept je baziran na Forex & Indicies trejding, a Mad koncept na Crypto tržište. Oni su skroz različiti, a fuzija ova dva koncepta daje isti rezultat na bilo kom trejding paru. Na vama je da odlučite iz kog želite da posmatrate market.",
                 },
                 {
-                  question: "ŠTA SADRŽI ALGO KONCEPT? ",
+                  question: "Šta sadrži Algo koncept?",
                   answer: "Baš ništa :P",
                 },
                 {
-                  question: "ŠTA SADRŽI MAD CONCEPT? ",
+                  question: "Šta sadrži Mad koncept?",
                   answer:
                     "MAD Concept je sistem koji se pre svega zasniva na suštinskom razumevanju tržišta, šta utiče i na koji način se kreira PA kroz analizu distribucije volume-a, vremena i njihovih derivata na level 1, level 2 i level 3 chartu. Daje mogućnost da pored reagovanja dodatno i predvidimo budući potencijalni 'price action' i njegovo razvijanje. Sadržaj je podeljen na module od kojih svaki sadrži odredjen alpha tool koji zajedno u sinergiji čine MAD Concept.",
                 },
                 {
-                  question: "ŠTA NAKON ODGLEDANE EDUKACIJE?",
+                  question: "Šta nakon odgledane edukacije?",
                   answer:
                     "Prvo i osnovno, testirajte što više na chartu sve što ste naučili ili i dalje učite. Kada konačno shvatite kako odabrana strategija funkcioniše, i osećate se spremno, možete se upustiti u trejd u koji ste sigurni uz prethodno navedene konfluence kojih ima nekoliko, što više to bolje. Možete smatrati sebe kao neko ko je i po znanju i po win rate-u zaista daleko od proseka, to vam garantujemo, isključivo pod uslovod da ste savladali sve prethodno prikazano u lekcijama. Dokažite to sebi tako što će vam vaši rezultati to reći.",
                 },
                 {
-                  question: "KAKO DO FINANSIRANJA?",
+                  question: "Kako do finansiranja?",
                   answer:
                     "Srećom po nas, postoje firme koje tragaju baš za trejderima kao što ćete VI postati. Te firme imaju za cilj da finansiraju konstantno profitabilne trejdere, od čega jedan deo profita ide njima, a ostatak zadržavate vi. Te sume mogu iznostiti od 5.000$ pa sve do 200.000$. Zvuči previše dobro da bi bilo istinito, zar ne? Slušajte tek ovo, Mad Science je jedina grupa na našim prostorima koja ima zvaničnu saradnju sa jednom od takvih firmi. U pitanju je Finotive Funding, jedna od najpoznatijih prop firmi kod nas. Pored toga što nude najbolje uslove kao što su No Time Limit i veoma povoljne cene, uz naš promo kod 'MADSCIENCE' dobijate dodatne pogodnosti u vidu deljenja profita i popust na plaćanje probe. To vam daje mogučnost da trejdujete bez svojih sredstava, dakle bez ikakvog rizika, a većinski profit vi zadrzavate.",
                 },
