@@ -171,7 +171,8 @@ const Index: NextPage = () => {
                 },
                 {
                   question: "Šta sadrži Algo koncept?",
-                  answer: "Baš ništa :P",
+                  answer:
+                    "Algo koncept je sistem koji očisti pogled na tržište do toga da može se većina tih pokreta predvidjati velikim win rate-om. Algo koncept obuhvata analizu od weekly timeframe-s skroz do 1 minut tako da sa tim znanjem možete samostalno trejdati i biti dugoročno profitabilni. Sadržaj obuhvata 6+ chaptera, preko 35 video lekcija, i preko 30 nedeljnih očekivanja, sadržaj je tako spremljen da bi sve na kraju bilo čisto i jednostavno kad se sve spoji.",
                 },
                 {
                   question: "Šta sadrži Mad koncept?",
