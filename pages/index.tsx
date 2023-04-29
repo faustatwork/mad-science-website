@@ -7,6 +7,7 @@ import Disclosure from "../components/Disclosure";
 import Testimonial from "../components/Testimonial";
 import Link from "next/link";
 import { ShoppingCart, Info } from "lucide-react";
+import Newsletter from "../components/Newsletter";
 
 const Index: NextPage = () => {
   return (
@@ -29,9 +30,9 @@ const Index: NextPage = () => {
           <h1 className="text-8xl font-bold text-brand-main sm:text-4xl">
             Mad Science
           </h1>
-          <p className="text-5xl font-bold text-gray-500 sm:text-2xl">
+          <h2 className="text-5xl font-bold text-gray-500 sm:text-2xl">
             Dolazi uskoro.
-          </p>
+          </h2>
           <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
             <Link
               className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
@@ -190,6 +191,9 @@ const Index: NextPage = () => {
               ]}
             />
           </div>
+        </section>
+        <section id="newsletter" className="w-full">
+          <Newsletter />
         </section>
       </main>
       <Footer />
