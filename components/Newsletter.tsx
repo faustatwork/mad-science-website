@@ -20,7 +20,7 @@ const Newsletter = () => {
             required={true}
             name="newsletter_form_input"
             id="newsletter_form_input"
-            className="w-full p-2 text-gray-500 outline-none"
+            className="w-full bg-white p-2 text-gray-500 outline-none"
           />
           <input
             type="submit"
