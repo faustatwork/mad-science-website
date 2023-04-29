@@ -53,9 +53,9 @@ const Disclosure = ({ content }: DisclosureProps) => {
                   </svg>
                 </span>
               </summary>
-              <p className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
+              <h3 className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
                 {item.answer}
-              </p>
+              </h3>
             </details>
           </>
         );
