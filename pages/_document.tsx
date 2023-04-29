@@ -4,6 +4,12 @@ export default class MadScienceWebsiteDocument extends Document {
   render() {
     return (
       <Html lang="sr">
+        <html
+          dangerouslySetInnerHTML={{
+            __html:
+              "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
+          }}
+        ></html>
         <Head>
           {/* Meta tags */}
           <meta
