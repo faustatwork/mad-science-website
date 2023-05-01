@@ -24,7 +24,7 @@ const LevelOne: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    fetch("../videos/video.mp4")
+    fetch("../videos/video.mp4", { mode: "cors" })
       .then(response => response.blob())
       .then(blob => {
         // eslint-disable-next-line no-console
@@ -32,6 +32,7 @@ const LevelOne: NextPage = () => {
         const video = videoRef.current as HTMLVideoElement;
         if (video) {
           video.src = URL.createObjectURL(blob);
+          video.crossOrigin = "anonymous";
           video.oncanplaythrough = function () {
             // eslint-disable-next-line no-console
             console.log("Can play through video without stopping");
