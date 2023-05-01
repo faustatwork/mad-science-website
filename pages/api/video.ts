@@ -21,7 +21,21 @@ export default async function handler(
 
   // Stream the file to the client
   const readStream = createReadStream(filePath);
-  await pipelineAsync(readStream, res);
+  readStream.on("open", () => {
+    // Only write to the response if it is still writable
+    if (!res.writableEnded) {
+      pipelineAsync(readStream, res).catch(err => {
+        // eslint-disable-next-line no-console
+        console.error("Pipeline error:", err);
+        res.status(500).end("Internal Server Error");
+      });
+    }
+  });
+  readStream.on("error", err => {
+    // eslint-disable-next-line no-console
+    console.error("ReadStream error:", err);
+    res.status(500).end("Internal Server Error");
+  });
 }
 
 function getContentType(filePath: string) {
