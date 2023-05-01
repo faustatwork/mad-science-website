@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const LevelOne: NextPage = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoUrl, setVideoUrl] = useState<string>();
 
   useEffect(() => {
     // Define a custom handler function for the contextmenu event
@@ -27,19 +27,8 @@ const LevelOne: NextPage = () => {
     fetch("../videos/video.mp4", { mode: "cors" })
       .then(response => response.blob())
       .then(blob => {
-        // eslint-disable-next-line no-console
-        console.log("Loaded video...");
-        const video = videoRef.current as HTMLVideoElement;
-        if (video) {
-          video.src = URL.createObjectURL(blob);
-          video.crossOrigin = "anonymous";
-          video.oncanplaythrough = function () {
-            // eslint-disable-next-line no-console
-            console.log("Can play through video without stopping");
-            URL.revokeObjectURL(video.src);
-          };
-          video.load();
-        }
+        const url = URL.createObjectURL(blob);
+        setVideoUrl(url);
       })
       // eslint-disable-next-line no-console
       .catch(error => console.error(error));
@@ -66,11 +55,12 @@ const LevelOne: NextPage = () => {
       <main className="flex min-h-screen w-screen flex-col items-center justify-center">
         <section className="flex w-full flex-1 flex-col items-center justify-center gap-5 px-20 text-center">
           <video
-            ref={videoRef}
+            src={videoUrl}
             width="640"
             height="480"
             controls
             controlsList="nodownload"
+            crossOrigin="anonymous"
           ></video>
         </section>
       </main>
