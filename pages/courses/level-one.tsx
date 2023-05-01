@@ -24,7 +24,7 @@ const LevelOne: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    fetch("../videos/video.mp4", { mode: "cors" })
+    fetch("../videos/video.mp4")
       .then(response => response.blob())
       .then(blob => {
         const url = URL.createObjectURL(blob);
