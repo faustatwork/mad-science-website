@@ -9,7 +9,7 @@ const LevelOne: NextPage = () => {
 
   useEffect(() => {
     // Define a custom handler function for the contextmenu event
-    const handleContextMenu = (e: any) => {
+    const handleContextMenu = (e: MouseEvent) => {
       // Prevent the right-click menu from appearing
       e.preventDefault();
     };
