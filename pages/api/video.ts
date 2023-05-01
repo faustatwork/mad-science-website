@@ -13,7 +13,7 @@ export default async function handler(
     return res.status(405).send("Method Not Allowed");
   }
 
-  const filePath = "../../private/videos/video.mp4";
+  const filePath = "./private/videos/video.mp4";
 
   // Set the Content-Type header based on the file extension
   const contentType = getContentType(filePath);
