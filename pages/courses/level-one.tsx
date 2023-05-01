@@ -2,9 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const LevelOne: NextPage = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     // Define a custom handler function for the contextmenu event
     const handleContextMenu = (e: any) => {
@@ -19,6 +21,27 @@ const LevelOne: NextPage = () => {
     return () => {
       document.removeEventListener("contextmenu", handleContextMenu);
     };
+  }, []);
+
+  useEffect(() => {
+    fetch("../videos/video.mp4")
+      .then(response => response.blob())
+      .then(blob => {
+        // eslint-disable-next-line no-console
+        console.log("Loaded video...");
+        const video = videoRef.current as HTMLVideoElement;
+        if (video) {
+          video.src = URL.createObjectURL(blob);
+          video.oncanplaythrough = function () {
+            // eslint-disable-next-line no-console
+            console.log("Can play through video without stopping");
+            URL.revokeObjectURL(video.src);
+          };
+          video.load();
+        }
+      })
+      // eslint-disable-next-line no-console
+      .catch(error => console.error(error));
   }, []);
 
   return (
@@ -41,10 +64,13 @@ const LevelOne: NextPage = () => {
       <Navbar />
       <main className="flex min-h-screen w-screen flex-col items-center justify-center">
         <section className="flex w-full flex-1 flex-col items-center justify-center gap-5 px-20 text-center">
-          <video width="640" height="480" controls controlsList="nodownload">
-            <source src="../videos/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <video
+            ref={videoRef}
+            width="640"
+            height="480"
+            controls
+            controlsList="nodownload"
+          ></video>
         </section>
       </main>
       <Footer />
