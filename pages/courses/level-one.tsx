@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const LevelOne: NextPage = () => {
-  const [videoUrl, setVideoUrl] = useState<string>();
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     // Define a custom handler function for the contextmenu event
@@ -24,14 +24,9 @@ const LevelOne: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    fetch("../videos/video.mp4")
-      .then(response => response.blob())
-      .then(blob => {
-        const url = URL.createObjectURL(blob);
-        setVideoUrl(url);
-      })
-      // eslint-disable-next-line no-console
-      .catch(error => console.error(error));
+    if (videoRef.current) {
+      videoRef.current.src = "/api/video";
+    }
   }, []);
 
   return (
@@ -55,7 +50,7 @@ const LevelOne: NextPage = () => {
       <main className="flex min-h-screen w-screen flex-col items-center justify-center">
         <section className="flex w-full flex-1 flex-col items-center justify-center gap-5 px-20 text-center">
           <video
-            src={videoUrl}
+            ref={videoRef}
             width="640"
             height="480"
             controls
