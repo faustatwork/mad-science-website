@@ -25,7 +25,7 @@ const Index: NextPage = () => {
         <link rel="canonical" href="https://mad-science-website.vercel.app" />
       </Head>
       <Navbar />
-      <header>
+      <div id="hero">
         <div className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-10">
           <h1 className="text-8xl font-bold text-brand-main sm:text-4xl">
             Mad Science
@@ -54,8 +54,8 @@ const Index: NextPage = () => {
             </Link>
           </div>
         </div>
-      </header>
-      <main className="flex flex-col items-center justify-center gap-40 px-20 sm:px-10">
+      </div>
+      <div className="flex flex-col items-center justify-center gap-40 px-20 sm:px-10">
         <section
           id="recenzije"
           className="flex flex-col items-center justify-center gap-10"
@@ -196,7 +196,7 @@ const Index: NextPage = () => {
         <section id="newsletter" className="w-full">
           <Newsletter />
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   );
