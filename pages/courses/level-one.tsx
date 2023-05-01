@@ -60,7 +60,6 @@ const LevelOne: NextPage = () => {
             height="480"
             controls
             controlsList="nodownload"
-            crossOrigin="anonymous"
           ></video>
         </section>
       </main>
