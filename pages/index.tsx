@@ -72,7 +72,6 @@ const Index: NextPage = () => {
           <Partners
             items={[
               { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
-              { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
             ]}
           />
         </section>
