@@ -29,7 +29,7 @@ const Stats = ({ items }: StatsArray) => {
   const hoverColor =
     theme.resolvedTheme === "dark"
       ? "rgba(14, 165, 233, 0.15)"
-      : "rgba(0, 174, 255, 0.15)";
+      : "rgba(31, 70, 88, 0.15)";
 
   return (
     <>
