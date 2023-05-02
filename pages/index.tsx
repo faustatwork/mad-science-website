@@ -167,7 +167,7 @@ const Index: NextPage = () => {
                 {
                   question: "Koja je razlika izmedju Algo i Mad koncepta?",
                   answer:
-                    "Algo koncept je baziran na Forex & Indicies trejding, a Mad koncept na Crypto tržište. Oni su skroz različiti, a fuzija ova dva koncepta daje isti rezultat na bilo kom trejding paru. Na vama je da odlučite iz kog želite da posmatrate market.",
+                    "Algo i Mad koncept su skroz različiti po pitanju tehničke analize na samom chartu, kao i po alatima i servisima koji se koriste za posmatranje pozadine kretanja cene. Fuzija ova dva koncepta daje isti rezultat na bilo kom trading paru. Na vama je da odlučite iz kog želite da posmatrate market.",
                 },
                 {
                   question: "Šta sadrži Algo koncept?",
