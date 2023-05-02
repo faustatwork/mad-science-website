@@ -10,6 +10,7 @@ import { ShoppingCart, Info } from "lucide-react";
 import Newsletter from "../components/Newsletter";
 import Partners from "../components/Partners";
 import { FinotiveLogo } from "../components/Logos";
+import Stats from "../components/Stats";
 
 const Index: NextPage = () => {
   return (
@@ -58,6 +59,26 @@ const Index: NextPage = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-60 px-20 sm:px-10">
+        <section
+          id="zastomi"
+          className="flex h-fit w-full flex-col items-center justify-center gap-16"
+        >
+          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+            Zašto mi
+          </p>
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+            Neki objašnjenje kakvi smo bogovi i zašto baš ti moja ikono sa zida.
+          </p>
+          <Stats
+            items={[
+              { icon: <Info />, title: "Feature 1", desc: "Description 1" },
+              { icon: <Info />, title: "Feature 2", desc: "Description 2" },
+              { icon: <Info />, title: "Feature 3", desc: "Description 3" },
+              { icon: <Info />, title: "Feature 4", desc: "Description 4" },
+              { icon: <Info />, title: "Feature 5", desc: "Description 5" },
+            ]}
+          />
+        </section>
         <section
           id="partneri"
           className="flex h-fit w-full flex-col items-center justify-center gap-16"
