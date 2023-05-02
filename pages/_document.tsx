@@ -10,7 +10,7 @@ export default class MadScienceWebsiteDocument extends Document {
             name="keywords"
             content="mad science, mad, science, trading, crypto, financial, financije, ulaganje, investments, investing, investicije, kurs, course, tecaj, zarada, profit, balkan, uspjeh, forex, novac, financijska sloboda"
           />
-          <meta property="og:image" content="/images/image.webp" />
+          <meta property="og:image" content="/images/banner.webp" />
           <meta property="og:site_name" content="Mad Science" />
           {/* Favicons */}
           <link rel="icon" href="/favicon/favicon.ico" />
