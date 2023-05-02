@@ -8,7 +8,7 @@ export default class MadScienceWebsiteDocument extends Document {
           {/* Meta tags */}
           <meta
             name="keywords"
-            content="mad science, mad, science, trading, crypto, financial, financije, ulaganje, investments, investing, investicije, kurs, course, tecaj, zarada, profit, balkan, uspjeh, forex, novac, financijska sloboda"
+            content="mad science, mad, science, trading, crypto, financial, financije, ulaganje, investments, investing, investicije, kurs, course, tecaj, zarada, algo concept, mad concept, mad koncept, algo koncept, profit, balkan, uspjeh, forex, novac"
           />
           <meta property="og:image" content="/images/banner.webp" />
           <meta property="og:site_name" content="Mad Science" />
