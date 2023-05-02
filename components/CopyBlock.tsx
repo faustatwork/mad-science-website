@@ -31,7 +31,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
         onClick={copyToClipboard}
         className={
           btnStyle +
-          "-mt-8 w-80 rounded border border-gray-300 bg-white py-3 px-4 text-sm text-black transition hover:bg-gray-300 dark:border-gray-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-gray-700"
+          "-mt-8 w-80 rounded border border-gray-300 bg-white px-4 py-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-gray-700"
         }
       >
         <p className="overflow-hidden text-clip">
@@ -47,7 +47,7 @@ export default function CopyBlock({ value }: CopyBlockProps) {
           )}
         </p>
         {copied ? null : (
-          <span className="absolute right-2.5 bottom-2.5 bg-inherit pl-2">
+          <span className="absolute bottom-2.5 right-2.5 bg-inherit pl-2">
             <Copy className="p-[3px]" />
           </span>
         )}
