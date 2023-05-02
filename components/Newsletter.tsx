@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { FormEvent } from "react";
 
 const Newsletter = () => {
+  const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <div className="flex w-full flex-col items-center justify-center gap-5 rounded-2xl bg-blue-600 py-14 px-8 text-center sm:items-start sm:justify-start sm:text-start">
@@ -9,7 +14,7 @@ const Newsletter = () => {
         </h3>
         <p className="leading-relaxed text-blue-100">Opis</p>
         <form
-          onSubmit={e => e.preventDefault()}
+          onSubmit={handleOnSubmit}
           className="flex w-full max-w-xl items-center justify-center rounded-lg bg-white p-1 sm:max-w-full sm:flex-col"
           id="newsletter-form"
         >
