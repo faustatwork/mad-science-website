@@ -72,7 +72,11 @@ const Index: NextPage = () => {
           <Stats
             items={[
               { icon: <Info />, title: "Feature 1", desc: "Description 1" },
-              { icon: <Info />, title: "Feature 2", desc: "Description 2" },
+              {
+                icon: <Info />,
+                title: "Feature 2",
+                desc: "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
+              },
               { icon: <Info />, title: "Feature 3", desc: "Description 3" },
               { icon: <Info />, title: "Feature 4", desc: "Description 4" },
               { icon: <Info />, title: "Feature 5", desc: "Description 5" },
