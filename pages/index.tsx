@@ -8,6 +8,8 @@ import Testimonial from "../components/Testimonial";
 import Link from "next/link";
 import { ShoppingCart, Info } from "lucide-react";
 import Newsletter from "../components/Newsletter";
+import Partners from "../components/Partners";
+import { FinotiveLogo } from "../components/Logos";
 
 const Index: NextPage = () => {
   return (
@@ -55,7 +57,25 @@ const Index: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-40 px-20 sm:px-10">
+      <div className="flex flex-col items-center justify-center gap-60 px-20 sm:px-10">
+        <section
+          id="partneri"
+          className="flex h-fit w-full flex-col items-center justify-center gap-16"
+        >
+          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+            Partneri
+          </p>
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+            Partnerisali smo se s tvrtkama navedenim ispod, iskoristite naš kod
+            &apos;MADSCIENCE&apos; na njihovoj platformi za nešto i nešto.
+          </p>
+          <Partners
+            items={[
+              { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
+              { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
+            ]}
+          />
+        </section>
         <section
           id="recenzije"
           className="flex flex-col items-center justify-center gap-10"
