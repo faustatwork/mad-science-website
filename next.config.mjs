@@ -15,6 +15,11 @@ const config = {
         destination: "https://discord.gg/mepGCW4EHa",
         permanent: true,
       },
+      {
+        source: "/instagram",
+        destination: "https://instagram.com/madscience.io",
+        permanent: true,
+      },
     ];
   },
 };
