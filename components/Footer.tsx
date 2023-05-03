@@ -10,6 +10,12 @@ const Footer = () => {
       <Link href="/discord" target="_blank" rel="noopener noreferrer">
         Discord
       </Link>
+      <Link href="/instagram" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </Link>
+      <Link href="/youtube" target="_blank" rel="noopener noreferrer">
+        Youtube
+      </Link>
     </>
   );
 

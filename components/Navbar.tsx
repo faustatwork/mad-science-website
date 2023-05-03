@@ -14,6 +14,12 @@ const Navbar = () => {
       <li>
         <Link href={"/discord"}>Discord</Link>
       </li>
+      <li>
+        <Link href={"/instagram"}>Instagram</Link>
+      </li>
+      <li>
+        <Link href={"/youtube"}>Youtube</Link>
+      </li>
     </>
   );
 

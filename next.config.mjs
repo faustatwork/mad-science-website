@@ -20,6 +20,11 @@ const config = {
         destination: "https://instagram.com/madscience.io",
         permanent: true,
       },
+      {
+        source: "/youtube",
+        destination: "https://www.youtube.com/@MadScience618",
+        permanent: true,
+      },
     ];
   },
 };
