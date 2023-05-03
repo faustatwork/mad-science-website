@@ -58,10 +58,10 @@ const Index: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-60 px-20 sm:px-10">
+      <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
           id="zastomi"
-          className="flex h-fit w-full flex-col items-center justify-center gap-16"
+          className="flex h-fit w-full flex-col items-center justify-center gap-10"
         >
           <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
             Zašto mi
@@ -85,7 +85,7 @@ const Index: NextPage = () => {
         </section>
         <section
           id="partneri"
-          className="flex h-fit w-full flex-col items-center justify-center gap-16"
+          className="flex h-fit w-full flex-col items-center justify-center gap-10"
         >
           <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
             Partneri
@@ -147,7 +147,7 @@ const Index: NextPage = () => {
         </section>
         <section
           id="kupi"
-          className="flex flex-col items-center justify-center gap-8 text-center"
+          className="flex flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Naslov
@@ -184,7 +184,7 @@ const Index: NextPage = () => {
           className="flex w-full items-center justify-center"
           id="pitanja"
         >
-          <div className="flex w-10/12 max-w-5xl flex-col items-start justify-start gap-5 sm:w-full">
+          <div className="flex w-10/12 max-w-5xl flex-col items-start justify-start gap-10 sm:w-full">
             <p className="text-3xl font-bold text-black dark:text-white">
               Pitanja i odgovori
             </p>
