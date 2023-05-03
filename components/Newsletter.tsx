@@ -20,6 +20,9 @@ const Newsletter = () => {
         >
           <input
             type="email"
+            // autoComplete is set to "off" due to the input field changing the color when a suggested
+            // option is selected, the workarounds didn't seem reliable at time so I set this to "off"
+            autoComplete="off"
             placeholder="Unesite svoj email"
             form="newsletter-form"
             required={true}
