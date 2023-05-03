@@ -13,11 +13,8 @@ const Error404: NextPage = () => {
         <meta property="og:title" content="Mad Science - 404" key="title" />
         <meta name="description" content="Mad Science" />
         <meta name="og:description" content="Mad Science" />
-        <meta
-          property="og:url"
-          content="https://mad-science-website.vercel.app"
-        />
-        <link rel="canonical" href="https://mad-science-website.vercel.app" />
+        <meta property="og:url" content="https://mad-science.io" />
+        <link rel="canonical" href="https://mad-science.io" />
       </Head>
       <Navbar />
       <main className="flex min-h-screen w-screen flex-col items-center justify-center">
