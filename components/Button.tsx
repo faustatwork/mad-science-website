@@ -2,21 +2,21 @@ import { tv } from "tailwind-variants";
 import { ReactNode } from "react";
 
 const button = tv({
-  base: "font-medium rounded-md",
+  base: "rounded-md font-medium",
   variants: {
     color: {
       primary:
-        "bg-blue-600 hover:bg-blue-700 text-white dark:focus:ring-blue-900 focus:ring-4 focus:ring-blue-200 transition hover:scale-105 hover:shadow-xl",
+        "bg-blue-600 text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900",
       secondary:
-        "border-blue-600 border-2 hover:bg-blue-700 dark:focus:ring-blue-900 focus:ring-4 focus:ring-blue-200 transition hover:scale-105 hover:shadow-xl text-blue-600 hover:text-white",
+        "border-2 border-blue-600 text-blue-600 transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900",
     },
     size: {
-      sm: "text-sm px-3 py-2",
-      md: "text-base px-3 py-2",
+      sm: "px-3 py-2 text-sm",
+      md: "px-3 py-2 text-base",
       lg: "px-4 py-3 text-lg",
     },
     disabled: {
-      true: "opacity-50 bg-gray-500 pointer-events-none",
+      true: "pointer-events-none bg-gray-500 opacity-50",
     },
   },
   defaultVariants: {
