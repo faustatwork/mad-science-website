@@ -4,6 +4,7 @@ interface TestimonialItems {
   user: string;
   avatar: string;
   message: string;
+  position?: string;
 }
 
 interface TestimonialProps {
@@ -37,6 +38,9 @@ const Testimonial = ({ content }: TestimonialProps) => {
 
                     <div className="text-sm text-black dark:text-white">
                       <p className="font-medium">{item.user}</p>
+                      <p className="font-normal text-gray-500 dark:text-gray-400">
+                        {item.position}
+                      </p>
                     </div>
                   </div>
                 </div>
