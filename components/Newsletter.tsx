@@ -8,7 +8,7 @@ const Newsletter = () => {
 
   return (
     <>
-      <div className="flex w-full flex-col items-center justify-center gap-10 rounded-2xl bg-blue-600 px-8 py-14 text-center sm:items-start sm:justify-start sm:text-start">
+      <div className="flex w-full flex-col items-center justify-center gap-7 rounded-2xl bg-blue-600 px-8 py-14 text-center sm:items-start sm:justify-start sm:text-start">
         <h3 className="text-3xl font-bold text-white">
           Pretplatite se na naš newsletter
         </h3>
