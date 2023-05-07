@@ -10,7 +10,6 @@ import { ShoppingCart, Info } from "lucide-react";
 import Newsletter from "../components/Newsletter";
 import Partners from "../components/Partners";
 import { FinotiveLogo } from "../components/Logos";
-import Stats from "../components/Stats";
 
 const Index: NextPage = () => {
   return (
@@ -57,47 +56,6 @@ const Index: NextPage = () => {
       </div>
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
-          id="zastomi"
-          className="flex h-fit w-full flex-col items-center justify-center gap-10"
-        >
-          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
-            Zašto mi
-          </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
-            Neki objašnjenje kakvi smo bogovi i zašto baš ti moja ikono sa zida.
-          </p>
-          <Stats
-            items={[
-              { icon: <Info />, title: "Feature 1", desc: "Description 1" },
-              {
-                icon: <Info />,
-                title: "Feature 2",
-                desc: "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
-              },
-              { icon: <Info />, title: "Feature 3", desc: "Description 3" },
-              { icon: <Info />, title: "Feature 4", desc: "Description 4" },
-              { icon: <Info />, title: "Feature 5", desc: "Description 5" },
-            ]}
-          />
-        </section>
-        <section
-          id="partneri"
-          className="flex h-fit w-full flex-col items-center justify-center gap-10"
-        >
-          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
-            Partneri
-          </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
-            Partnerisali smo se s tvrtkama navedenim ispod, iskoristite naš kod
-            &apos;MADSCIENCE&apos; na njihovoj platformi za nešto i nešto.
-          </p>
-          <Partners
-            items={[
-              { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
-            ]}
-          />
-        </section>
-        <section
           id="recenzije"
           className="flex flex-col items-center justify-center gap-10"
         >
@@ -139,6 +97,23 @@ const Index: NextPage = () => {
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a. Fusce eu nisi convallis, pellentesque velit eget, facilisis eros. Pellentesque quis auctor ligula. Donec semper dui et dui imperdiet, ac dictum mi commodo. Phasellus bibendum, diam ac tempor lobortis, quam eros bibendum justo, ac dignissim enim sapien laoreet velit.",
                 avatar: "/images/logo.webp",
               },
+            ]}
+          />
+        </section>
+        <section
+          id="partneri"
+          className="flex h-fit w-full flex-col items-center justify-center gap-10"
+        >
+          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+            Partneri
+          </p>
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+            Partnerisali smo se s tvrtkama navedenim ispod, iskoristite naš kod
+            &apos;MADSCIENCE&apos; na njihovoj platformi za nešto i nešto.
+          </p>
+          <Partners
+            items={[
+              { logo: <FinotiveLogo />, link: "https://finotivefunding.com/" },
             ]}
           />
         </section>
