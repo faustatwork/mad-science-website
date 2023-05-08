@@ -119,7 +119,7 @@ const Index: NextPage = () => {
         </section>
         <section
           id="kupi"
-          className="flex flex-col items-center justify-center gap-10 text-center"
+          className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Naslov
