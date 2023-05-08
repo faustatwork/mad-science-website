@@ -21,3 +21,27 @@ body {
 .dark body {
   background-color: rgb(16, 16, 16);
 }
+
+.swiper {
+  padding-bottom: 60px !important;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 0.2;
+  background-color: #000000;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #2563eb;
+  opacity: 1;
+}
+
+.dark .swiper-pagination > .swiper-pagination-bullet {
+  opacity: 0.2;
+  background-color: #FFFFFF;
+}
+
+.dark .swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #2563eb;
+  opacity: 1;
+}

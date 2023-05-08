@@ -57,7 +57,7 @@ const Index: NextPage = () => {
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
           id="recenzije"
-          className="flex flex-col items-center justify-center gap-10"
+          className="flex w-full flex-col items-center justify-center gap-10"
         >
           <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
             Što kažu ljudi o nama
@@ -69,32 +69,32 @@ const Index: NextPage = () => {
             content={[
               {
                 user: "Marin",
+                position: "Support @ Trading Group",
                 message:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a. Fusce eu nisi convallis, pellentesque velit eget, facilisis eros. Pellentesque quis auctor ligula. Donec semper dui et dui imperdiet, ac dictum mi commodo.",
+                  "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
                 avatar: "/images/logo.webp",
               },
               {
                 user: "Marin",
                 message:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a. Fusce eu nisi convallis, pellentesque velit eget, facilisis eros. Pellentesque quis auctor ligula. Donec semper dui et dui imperdiet, ac dictum mi commodo. Phasellus bibendum, diam ac tempor lobortis, quam eros bibendum justo, ac dignissim enim sapien laoreet velit.",
+                  "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja.",
                 avatar: "/images/logo.webp",
               },
               {
                 user: "Marin",
-                message:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a.",
+                position: "Mad Essentials polaznik",
+                message: "Review 3",
                 avatar: "/images/logo.webp",
               },
               {
                 user: "Marin",
-                message:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a. Fusce eu nisi convallis, pellentesque velit eget, facilisis eros. Pellentesque quis auctor ligula. Donec semper dui et dui imperdiet, ac dictum mi commodo. Phasellus bibendum, diam ac tempor lobortis, quam eros bibendum justo, ac dignissim enim sapien laoreet velit.",
+                message: "Review 4",
                 avatar: "/images/logo.webp",
               },
               {
                 user: "Marin",
-                message:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere lacus consequat odio interdum maximus. Morbi metus arcu, rhoncus et enim suscipit, molestie luctus nulla. Maecenas tempor nisi metus. Suspendisse rhoncus sem lectus, vitae laoreet sem consectetur a. Fusce eu nisi convallis, pellentesque velit eget, facilisis eros. Pellentesque quis auctor ligula. Donec semper dui et dui imperdiet, ac dictum mi commodo. Phasellus bibendum, diam ac tempor lobortis, quam eros bibendum justo, ac dignissim enim sapien laoreet velit.",
+                position: "Owner @ Trading Group",
+                message: "Review 5",
                 avatar: "/images/logo.webp",
               },
             ]}

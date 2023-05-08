@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
+import useMediaQuery from "../utils/hooks/useMediaQuery";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface TestimonialItems {
   user: string;
@@ -12,20 +18,28 @@ interface TestimonialProps {
 }
 
 const Testimonial = ({ content }: TestimonialProps) => {
+  const isSmall = useMediaQuery("(max-width: 1025px)");
+
   return (
     <>
-      <div className="mx-auto max-w-7xl">
-        <div className="columns-3 gap-6 [column-fill:_balance] lg:gap-8 md:columns-2 sm:columns-1">
-          {content.map((item, index) => {
-            return (
-              <>
-                <div className="mb-8 break-inside-avoid" key={index}>
-                  <blockquote className="rounded-xl bg-white p-6 shadow shadow-black/5 dark:bg-gray-800 dark:shadow-white/5">
-                    <p className="leading-relaxed text-gray-700 dark:text-gray-200">
-                      {item.message}
-                    </p>
-                  </blockquote>
-
+      <Swiper
+        slidesPerView={!isSmall ? 3 : 1}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay]}
+        // eslint-disable-next-line tailwindcss/no-custom-classname
+        className="mySwiper w-full"
+      >
+        {content.map((item, index) => {
+          return (
+            <>
+              <SwiperSlide key={index}>
+                <div className="flex flex-col justify-between rounded-xl bg-white p-6 shadow shadow-black/5 dark:bg-gray-800 dark:shadow-white/5">
+                  <p className="leading-relaxed text-gray-700 dark:text-gray-200">
+                    {item.message}
+                  </p>
                   <div className="mt-4 flex items-center gap-4">
                     <Image
                       alt="testimonial user avatar"
@@ -35,7 +49,6 @@ const Testimonial = ({ content }: TestimonialProps) => {
                       quality={100}
                       className="h-12 w-12 rounded-full object-cover"
                     />
-
                     <div className="text-sm text-black dark:text-white">
                       <p className="font-medium">{item.user}</p>
                       <p className="font-normal text-gray-500 dark:text-gray-400">
@@ -44,11 +57,11 @@ const Testimonial = ({ content }: TestimonialProps) => {
                     </div>
                   </div>
                 </div>
-              </>
-            );
-          })}
-        </div>
-      </div>
+              </SwiperSlide>
+            </>
+          );
+        })}
+      </Swiper>
     </>
   );
 };
