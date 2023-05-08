@@ -35,7 +35,7 @@ const Index: NextPage = () => {
           <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
             <Link
               className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
-              href={"#kupi"}
+              href={"#edukacija"}
             >
               <span className="mr-2 inline-block align-middle">
                 <ShoppingCart size={18} strokeWidth={3} />
@@ -118,7 +118,7 @@ const Index: NextPage = () => {
           />
         </section>
         <section
-          id="kupi"
+          id="edukacija"
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -158,7 +158,7 @@ const Index: NextPage = () => {
         >
           <div className="flex w-10/12 max-w-5xl flex-col items-start justify-start gap-10 sm:w-full">
             <p className="text-3xl font-bold text-black dark:text-white">
-              Pitanja i odgovori
+              Često postavljana pitanja
             </p>
             <p className="text-lg text-gray-500 dark:text-gray-400">
               Svi odgovori na sva vaša pitanja.

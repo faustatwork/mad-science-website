@@ -15,7 +15,7 @@ const SwitchTheme = () => {
 
   return (
     <select
-      className="cursor-pointer appearance-none rounded-md bg-blue-600 px-4 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+      className="cursor-pointer appearance-none rounded-md bg-gray-200 px-4 py-3 text-lg font-medium text-gray-600 outline-none ring-gray-300 transition hover:scale-105 hover:bg-gray-300 hover:shadow-xl hover:shadow-gray-200 focus:ring-4 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-700 dark:hover:bg-gray-700 dark:hover:shadow-gray-800"
       value={theme}
       onChange={e => setTheme(e.target.value)}
     >

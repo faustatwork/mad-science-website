@@ -30,6 +30,11 @@ const config = {
         destination: "https://www.tiktok.com/@madscience.io",
         permanent: true,
       },
+      {
+        source: "/edukacija",
+        destination: "/#edukacija",
+        permanent: true,
+      },
     ];
   },
 };
