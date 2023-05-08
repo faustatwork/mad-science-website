@@ -25,6 +25,11 @@ const config = {
         destination: "https://www.youtube.com/@MadScience618",
         permanent: true,
       },
+      {
+        source: "/tiktok",
+        destination: "https://www.tiktok.com/@madscience.io",
+        permanent: true,
+      },
     ];
   },
 };
