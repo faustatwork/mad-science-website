@@ -32,7 +32,7 @@ const Footer = () => {
       <li>
         <Link
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
-          href="#faq"
+          href="#pitanja"
         >
           Često postavljana pitanja
         </Link>
