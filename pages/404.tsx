@@ -17,7 +17,7 @@ const Error404: NextPage = () => {
         <link rel="canonical" href="https://mad-science.io" />
       </Head>
       <Navbar />
-      <main className="flex min-h-screen w-screen flex-col items-center justify-center">
+      <div className="flex min-h-screen w-screen flex-col items-center justify-center">
         <section className="flex w-full flex-1 flex-col items-center justify-center gap-5 px-20 text-center">
           <h1 className="text-9xl font-black text-gray-200 dark:text-gray-800">
             404
@@ -33,7 +33,7 @@ const Error404: NextPage = () => {
             Nazad
           </Link>
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   );
