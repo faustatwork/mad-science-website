@@ -50,7 +50,7 @@ const Footer = () => {
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
         >
           <span className="sr-only">Telegram</span>
-          <TelegramLogo />
+          <TelegramLogo className="h-6 w-6" />
         </Link>
       </li>
       <li>
@@ -61,7 +61,7 @@ const Footer = () => {
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
         >
           <span className="sr-only">Discord</span>
-          <DiscordLogo />
+          <DiscordLogo className="h-6 w-6" />
         </Link>
       </li>
       <li>
@@ -72,7 +72,7 @@ const Footer = () => {
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
         >
           <span className="sr-only">Instagram</span>
-          <InstagramLogo />
+          <InstagramLogo className="h-6 w-6" />
         </Link>
       </li>
       <li>
@@ -83,7 +83,7 @@ const Footer = () => {
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
         >
           <span className="sr-only">TikTok</span>
-          <TikTokLogo />
+          <TikTokLogo className="h-6 w-6" />
         </Link>
       </li>
       <li>
@@ -94,7 +94,7 @@ const Footer = () => {
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
         >
           <span className="sr-only">YouTube</span>
-          <YouTubeLogo />
+          <YouTubeLogo className="h-6 w-6" />
         </Link>
       </li>
     </>
@@ -118,19 +118,19 @@ const Footer = () => {
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-500">
             A small group that can do the math.
           </p>
-          <nav aria-label="Footer Nav" className="mt-12">
+          <nav aria-label="Footer Nav" className="mt-6">
             <ul className="flex flex-wrap justify-center gap-6 lg:gap-12 md:gap-8">
               {footerNav}
             </ul>
           </nav>
-          <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+          <ul className="mt-10 flex justify-center gap-6 md:gap-8">
             {footerSocials}
           </ul>
-          <p className="mx-auto mt-12 text-center text-sm leading-relaxed text-gray-400 dark:text-gray-600">
+          <p className="mx-auto mt-10 text-center text-sm leading-relaxed text-gray-400 dark:text-gray-600">
             Copyright © 2023 - {new Date().getFullYear()} Mad Science. All
             rights reserved.
           </p>
-          <div className="mt-12 flex items-center justify-center">
+          <div className="mt-6 flex items-center justify-center">
             <SwitchTheme />
           </div>
         </div>

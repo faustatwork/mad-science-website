@@ -31,7 +31,6 @@ export const InstagramLogo = (props: SVGProps<SVGSVGElement>) => {
     <>
       <svg
         {...props}
-        className="h-6 w-6"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -51,7 +50,6 @@ export const TelegramLogo = (props: SVGProps<SVGSVGElement>) => {
     <>
       <svg
         {...props}
-        className="h-6 w-6"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -71,7 +69,6 @@ export const TikTokLogo = (props: SVGProps<SVGSVGElement>) => {
     <>
       <svg
         {...props}
-        className="h-6 w-6"
         fill="currentColor"
         viewBox="0 0 21 24"
         aria-hidden="true"
@@ -87,7 +84,6 @@ export const YouTubeLogo = (props: SVGProps<SVGSVGElement>) => {
     <>
       <svg
         {...props}
-        className="h-6 w-6"
         fill="currentColor"
         viewBox="0 0 35 24"
         aria-hidden="true"
@@ -103,7 +99,6 @@ export const DiscordLogo = (props: SVGProps<SVGSVGElement>) => {
     <>
       <svg
         {...props}
-        className="h-6 w-6"
         fill="currentColor"
         viewBox="0 0 32 24"
         aria-hidden="true"
