@@ -9,10 +9,6 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isWindowSizeSmall = useMediaQuery("(max-width: 1075px)");
-  const motionVariants = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
-  };
 
   const navLinks = (
     <>
@@ -110,10 +106,7 @@ const Navbar = () => {
           <Image alt="Mad Science logo" src={logo} height={30} quality={100} />
           Mad Science
         </Link>
-        <motion.ul
-          animate={isOpen ? "open" : "closed"}
-          variants={motionVariants}
-          transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
+        <ul
           className={
             isWindowSizeSmall
               ? "absolute mt-[4.5rem] h-[90vh] w-full list-none flex-col items-start justify-start gap-10 bg-gray-200 p-10 text-white dark:bg-zinc-900" +
@@ -135,7 +128,7 @@ const Navbar = () => {
             </span>
             Edukacija
           </Link>
-        </motion.ul>
+        </ul>
         <Link
           className={
             isWindowSizeSmall
