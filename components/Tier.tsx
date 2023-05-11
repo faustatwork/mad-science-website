@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
-import StyledDialog from "./PaymentDialog";
+import PaymentDialog from "./PaymentDialog";
 import { ShoppingCart } from "lucide-react";
 
 interface TierArray {
@@ -21,7 +21,7 @@ const Tier = ({ items }: TierArray) => {
 
   return (
     <>
-      <StyledDialog isOpen={openDialog} setIsOpen={setOpenDialog} />
+      <PaymentDialog isOpen={openDialog} setIsOpen={setOpenDialog} />
       <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
         {items.map((item, index) => {
           const recommended = item.recommended
