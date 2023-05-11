@@ -16,7 +16,7 @@ const Footer = () => {
       <li>
         <Link
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
-          href="#onama"
+          href="https://mad-science.io/#onama"
         >
           O nama
         </Link>
@@ -24,7 +24,7 @@ const Footer = () => {
       <li>
         <Link
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
-          href="#edukacija"
+          href="/edukacija"
         >
           Edukacija
         </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
       <li>
         <Link
           className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
-          href="#pitanja"
+          href="https://mad-science.io/#pitanja"
         >
           Često postavljana pitanja
         </Link>
