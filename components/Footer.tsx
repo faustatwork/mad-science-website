@@ -127,8 +127,11 @@ const Footer = () => {
             {footerSocials}
           </ul>
           <p className="mx-auto mt-10 text-center text-sm leading-relaxed text-gray-400 dark:text-gray-600">
-            Copyright © 2023 - {new Date().getFullYear()} Mad Science. All
-            rights reserved.
+            {new Date().getFullYear() === 2023
+              ? `Copyright © 2023 Mad Science. All
+            rights reserved.`
+              : `Copyright © 2023 - ${new Date().getFullYear()} Mad Science. All
+            rights reserved.`}
           </p>
           <div className="mt-6 flex items-center justify-center">
             <SwitchTheme />
