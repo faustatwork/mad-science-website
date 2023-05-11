@@ -4,10 +4,15 @@ import useMediaQuery from "../utils/hooks/useMediaQuery";
 import { Book } from "lucide-react";
 import Image from "next/image";
 import logo from "../public/images/logo.webp";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isWindowSizeSmall = useMediaQuery("(max-width: 1075px)");
+  const motionVariants = {
+    open: { opacity: 1 },
+    closed: { opacity: 0 },
+  };
 
   const navLinks = (
     <>
@@ -54,7 +59,8 @@ const Navbar = () => {
               : "hidden"
           }
         >
-          <button
+          <motion.button
+            whileHover={{ scale: 1.1 }}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="show navbar button"
           >
@@ -79,7 +85,7 @@ const Navbar = () => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
               </svg>
             )}
-          </button>
+          </motion.button>
           <Link
             href={"/"}
             className="flex flex-row items-center justify-center gap-5 text-2xl font-bold"
@@ -104,7 +110,10 @@ const Navbar = () => {
           <Image alt="Mad Science logo" src={logo} height={30} quality={100} />
           Mad Science
         </Link>
-        <ul
+        <motion.ul
+          animate={isOpen ? "open" : "closed"}
+          variants={motionVariants}
+          transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
           className={
             isWindowSizeSmall
               ? "absolute mt-[4.5rem] h-[90vh] w-full list-none flex-col items-start justify-start gap-10 bg-gray-200 p-10 text-white dark:bg-zinc-900" +
@@ -126,7 +135,7 @@ const Navbar = () => {
             </span>
             Edukacija
           </Link>
-        </ul>
+        </motion.ul>
         <Link
           className={
             isWindowSizeSmall
