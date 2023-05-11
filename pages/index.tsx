@@ -53,7 +53,7 @@ const Index: NextPage = () => {
             Mad Science
           </h1>
           <h2 className="text-5xl font-bold text-gray-500 sm:text-2xl">
-            Dolazi uskoro.
+            A small group that can do the math.
           </h2>
           <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
             <Link
