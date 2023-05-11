@@ -26,6 +26,29 @@ const Index: NextPage = () => {
       <Navbar />
       <div id="hero">
         <div className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-10">
+          <Link
+            href="/edukacija"
+            className="inline-flex flex-row items-center gap-x-6 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <span className="inline-block rounded-full bg-blue-600 px-3 py-1 text-white">
+              Novosti
+            </span>
+            <p className="flex items-center">
+              Edukacija Level 2 je dostupna
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </p>
+          </Link>
           <h1 className="text-8xl font-bold text-brand-main sm:text-4xl">
             Mad Science
           </h1>

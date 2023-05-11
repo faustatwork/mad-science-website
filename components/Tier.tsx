@@ -26,7 +26,7 @@ const Tier = ({ items }: TierArray) => {
         {items.map((item, index) => {
           const recommended = item.recommended
             ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 p-12 "
-            : "border border-gray-100 shadow dark:border-gray-600 py-6 px-12  ";
+            : "border border-gray-200 shadow dark:border-gray-600 py-6 px-12  ";
 
           return (
             <>
