@@ -21,7 +21,7 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
       document.documentElement.style.scrollBehavior = "auto";
     } else {
       const timeoutId = setTimeout(() => {
-        document.documentElement.style.scrollBehavior = "smooth";
+        document.documentElement.style.scrollBehavior = "";
       }, 0);
       return () => clearTimeout(timeoutId);
     }
