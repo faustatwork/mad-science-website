@@ -107,7 +107,7 @@ const Navbar = () => {
         <ul
           className={
             isWindowSizeSmall
-              ? "absolute mt-[4.5rem] h-[87vh] w-full list-none flex-col items-start justify-start gap-10 bg-gray-200 p-10 text-white dark:bg-zinc-900" +
+              ? "absolute mt-[4.5rem] h-[90vh] w-full list-none flex-col items-start justify-start gap-10 bg-gray-200 p-10 text-white dark:bg-zinc-900" +
                 (isOpen ? " flex" : " hidden")
               : "flex list-none flex-row items-center justify-center gap-10"
           }
