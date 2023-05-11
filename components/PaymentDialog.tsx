@@ -6,7 +6,7 @@ import Image from "next/image";
 import qrDark from "../public/images/qr-dark.webp";
 import qrLight from "../public/images/qr-light.webp";
 import CopyBlock from "./CopyBlock";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 interface PaymentDialogProps {
   isOpen: boolean;
