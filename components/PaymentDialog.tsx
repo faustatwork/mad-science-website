@@ -6,6 +6,7 @@ import Image from "next/image";
 import qrDark from "../public/images/qr-dark.webp";
 import qrLight from "../public/images/qr-light.webp";
 import CopyBlock from "./CopyBlock";
+import { useEffect, useRef } from "react";
 
 interface PaymentDialogProps {
   isOpen: boolean;
@@ -14,6 +15,17 @@ interface PaymentDialogProps {
 
 const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
   const theme = useTheme();
+
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.scrollBehavior = "auto";
+    } else {
+      const timeoutId = setTimeout(() => {
+        document.documentElement.style.scrollBehavior = "smooth";
+      }, 0);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isOpen]);
 
   return (
     <>
