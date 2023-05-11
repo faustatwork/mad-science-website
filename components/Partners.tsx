@@ -8,6 +8,7 @@ interface PartnersArray {
 interface PartnersProps {
   logo: ReactNode;
   link: string;
+  label: string;
 }
 
 const Partners = ({ items }: PartnersArray) => {
@@ -19,7 +20,11 @@ const Partners = ({ items }: PartnersArray) => {
             return (
               <>
                 <li key={index}>
-                  <Link href={item.link} target="_blank">
+                  <Link
+                    aria-label={item.label}
+                    href={item.link}
+                    target="_blank"
+                  >
                     <span className="fill-gray-400 hover:fill-gray-600 dark:fill-gray-500 dark:hover:fill-gray-300">
                       {item.logo}
                     </span>
