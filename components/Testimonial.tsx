@@ -28,6 +28,10 @@ const Testimonial = ({ content }: TestimonialProps) => {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         modules={[Pagination, Autoplay]}
         // eslint-disable-next-line tailwindcss/no-custom-classname
         className="mySwiper w-full"
