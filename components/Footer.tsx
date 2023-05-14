@@ -31,6 +31,14 @@ const Footer = () => {
           Često postavljana pitanja
         </Link>
       </li>
+      <li>
+        <Link
+          className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
+          href="https://mad-science.io/linkovi"
+        >
+          Linkovi
+        </Link>
+      </li>
     </>
   );
 
