@@ -239,8 +239,8 @@ const Index: NextPage = () => {
         <section id="newsletter" className="w-full">
           <Newsletter />
         </section>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
