@@ -24,7 +24,7 @@ const Linkovi: NextPage = () => {
         <link rel="canonical" href="https://mad-science.io" />
       </Head>
       <Navbar />
-      <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-10 px-20 sm:px-10 sm:pt-40">
+      <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-10 px-20 sm:px-10 sm:pt-48">
         <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
           Linkovi
         </p>
@@ -66,7 +66,9 @@ const Linkovi: NextPage = () => {
           ]}
         />
       </div>
-      <Footer />
+      <div className="sm:mt-36">
+        <Footer />
+      </div>
     </>
   );
 };
