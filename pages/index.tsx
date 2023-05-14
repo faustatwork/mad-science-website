@@ -158,14 +158,22 @@ const Index: NextPage = () => {
                 title: "Level 1",
                 description: "Opis",
                 price: 44,
-                features: ["Live trading", "Item", "Item"],
+                features: [
+                  "Live trading",
+                  "Pristup privatnom Discord serveru",
+                  "Item",
+                ],
                 model: "jednokratno",
               },
               {
                 title: "Level 2",
                 description: "Opis",
                 price: 80,
-                features: ["Live trading", "Item", "Item"],
+                features: [
+                  "Live trading",
+                  "Pristup privatnom Discord serveru",
+                  "Item",
+                ],
                 model: "mjesečno",
                 recommended: true,
               },
@@ -173,7 +181,11 @@ const Index: NextPage = () => {
                 title: "Level 3",
                 description: "Opis",
                 price: 999,
-                features: ["Live trading", "Item", "Item"],
+                features: [
+                  "Live trading",
+                  "Pristup privatnom Discord serveru",
+                  "Item",
+                ],
                 model: "jednokratno",
               },
             ]}
