@@ -1,12 +1,6 @@
 import Link from "next/link";
 import SwitchTheme from "./SwitchTheme";
-import {
-  DiscordLogo,
-  InstagramLogo,
-  TelegramLogo,
-  TikTokLogo,
-  YouTubeLogo,
-} from "./Logos";
+import { InstagramLogo, TelegramLogo, TikTokLogo, YouTubeLogo } from "./Logos";
 import Image from "next/image";
 import logo from "../public/images/logo.webp";
 
@@ -51,17 +45,6 @@ const Footer = () => {
         >
           <span className="sr-only">Telegram</span>
           <TelegramLogo className="h-6 w-6" />
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/discord"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="text-gray-400 transition hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
-        >
-          <span className="sr-only">Discord</span>
-          <DiscordLogo className="h-6 w-6" />
         </Link>
       </li>
       <li>
