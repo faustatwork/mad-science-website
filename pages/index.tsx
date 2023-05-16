@@ -201,7 +201,7 @@ const Index: NextPage = () => {
           <Tier
             items={[
               {
-                title: "Level 1",
+                title: "Essentials",
                 description: "Opis",
                 price: 44,
                 features: [
@@ -212,13 +212,15 @@ const Index: NextPage = () => {
                 model: "jednokratno",
               },
               {
-                title: "Level 2",
+                title: "Level 2.0",
                 description: "Opis",
                 price: 80,
                 features: [
+                  "Mad Concept",
+                  "GC Algo Concept",
                   "Live trading",
                   "Pristup privatnom Discord serveru",
-                  "Item",
+                  "Weekly outlook",
                 ],
                 model: "mjesečno",
                 recommended: true,
