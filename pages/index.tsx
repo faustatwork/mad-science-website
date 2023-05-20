@@ -87,11 +87,7 @@ const Index: NextPage = () => {
           </p>
           <div className="flex flex-row flex-wrap items-center justify-center gap-6">
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
-              <Verified
-                size={22}
-                strokeWidth={3}
-                className="stroke-[#009dff]"
-              />
+              <Verified size={22} className="stroke-[#009dff]" />
               Preko X zadovoljnih polaznika
             </div>
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
