@@ -198,46 +198,38 @@ const Index: NextPage = () => {
             Naslov
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400">Opis</p>
-          <Tier
-            items={[
-              {
-                title: "Essentials",
-                description: "Opis",
-                price: 44,
-                features: [
-                  "Live trading",
-                  "Pristup privatnom Discord serveru",
-                  "Item",
-                ],
-                model: "jednokratno",
-              },
-              {
-                title: "Level 2.0",
-                description: "Opis",
-                price: 80,
-                features: [
-                  "Mad Concept",
-                  "GC Algo Concept",
-                  "Live trading",
-                  "Pristup privatnom Discord serveru",
-                  "Weekly outlook",
-                ],
-                model: "mjesečno",
-                recommended: true,
-              },
-              {
-                title: "Level 3",
-                description: "Opis",
-                price: 999,
-                features: [
-                  "Live trading",
-                  "Pristup privatnom Discord serveru",
-                  "Item",
-                ],
-                model: "jednokratno",
-              },
-            ]}
-          />
+          <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
+            <Tier
+              title={"Essentials"}
+              description={"Opis"}
+              features={["Pristup privatnom Discord serveru"]}
+              models={[{ interval: "jednokratno", amount: 44 }]}
+            />
+            <Tier
+              title={"Level 2.0"}
+              description={"Opis"}
+              features={[
+                "Mad Concept",
+                "GC Algo Concept",
+                "Live trading",
+                "Pristup privatnom Discord serveru",
+                "Weekly outlook",
+              ]}
+              models={[
+                { interval: "1 mjesec", amount: 80 },
+                { interval: "3 mjeseca", amount: 224 },
+                { interval: "6 mjeseci", amount: 440 },
+              ]}
+              recommended
+            />
+            <Tier
+              title={"Level 3.0"}
+              description={"Dolazi uskoro."}
+              features={["Pristup privatnom Discord serveru"]}
+              models={[{ interval: "jednokratno", amount: 999 }]}
+              disabled
+            />
+          </div>
         </section>
         <section
           className="flex w-full items-center justify-center"
