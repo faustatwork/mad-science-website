@@ -92,7 +92,7 @@ const Tier = ({
           })}
         </ul>
         <Button
-          text={`Kupi (€${getAmountForInterval() ?? models[0].amount})`}
+          text={`Kupi ($${getAmountForInterval() ?? models[0].amount})`}
           size={"lg"}
           color={"primary"}
           action={() => setOpenDialog(!openDialog)}
