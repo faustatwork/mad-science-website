@@ -53,7 +53,7 @@ const Linkovi: NextPage = () => {
             },
             {
               icon: <YouTubeLogo />,
-              href: "/yotube",
+              href: "/youtube",
               name: "YouTube",
               desc: "YouTube",
             },
