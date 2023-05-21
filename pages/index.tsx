@@ -205,7 +205,7 @@ const Index: NextPage = () => {
               title={"Level 2.0"}
               description={"Opis"}
               features={[
-                "Mad Concept",
+                "MAD Concept",
                 "GC Algo Concept",
                 "Live trading",
                 "Pristup privatnom Discord serveru",
