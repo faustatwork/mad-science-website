@@ -34,7 +34,7 @@ const Testimonial = ({ content }: TestimonialProps) => {
         }}
         modules={[Pagination, Autoplay]}
         // eslint-disable-next-line tailwindcss/no-custom-classname
-        className="mySwiper h-96 w-full"
+        className="mySwiper h-full w-full"
       >
         {content.map((item, index) => {
           return (
@@ -48,8 +48,8 @@ const Testimonial = ({ content }: TestimonialProps) => {
                     <Image
                       alt="testimonial user avatar"
                       src={item.avatar}
-                      width={240}
-                      height={240}
+                      width={128}
+                      height={128}
                       quality={100}
                       className="h-12 w-12 rounded-full object-cover"
                     />

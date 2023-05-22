@@ -133,34 +133,46 @@ const Index: NextPage = () => {
           <Testimonial
             content={[
               {
-                user: "Marin",
-                position: "Support @ Trading Group",
+                user: "Djomla17",
+                position: "Level 2.0 polaznik",
                 message:
-                  "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
-                avatar: "/images/logo.webp",
+                  "Sada kada sam odgledao detalino sva 3 videa i backtestovao, malo je reći da sam oduševlien. Veoma detaljno objašnjeno, a opet tako da se može sve razumeti. Preporučujem vam svima da uzmete, nećete se pokajati. Jedva čekam nove epizode zbog kojih će biti i novih profita.",
+                avatar: "/testimonials/default.webp",
               },
               {
-                user: "Marin",
+                user: "Amir",
+                position: "Essentials polaznik",
                 message:
-                  "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja.",
-                avatar: "/images/logo.webp",
+                  "Prvo da kažem da sam mnogo zadovoljan sa Essentials programom pogotovo za cijenu koju košta, vjerujem da nigdje drugo se ne mogu naći sve te bitne informacije ovako dobro objašnjene na jednom mjestu, sve se to može naći online ali bi morao tražiti mjesecima i milion različitih mišlienia čuti da na kraju ništa ne skontaš suštinski. Svidja mi se to predavanje jer nema monotonosti gdje ti se spava nakon 3 minute videa što je jako jako bitna stvar kada se uči nešto. Teme jako ozbiljne i baš ono što je potrebno ni manje ni više. Za sada sam prezadovoljan i jedva čekam da krenem na veći nivo, a vama samo poručujem da nastavite kako radite i sigurno će biti jako ozbiljna priča.",
+                avatar: "/testimonials/amir.webp",
               },
               {
-                user: "Marin",
-                position: "Mad Essentials polaznik",
-                message: "Review 3",
-                avatar: "/images/logo.webp",
+                user: "Joca",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Utisak je predobar 👌, community TOP, edukacija TOP, nema zamerki! Tačno kada sam pogledao videe iz edukacije par puta bilo mi je jasno koliko do sad nisam znao i koliko sam propuštao. Šta Mad Science radi to 100% nema nigde na Balkanu, a teško i da ima u stranim zemljama 🥰. A small group that can do the math 💯.",
+                avatar: "/testimonials/joca.webp",
               },
               {
-                user: "Marin",
-                message: "Review 4",
-                avatar: "/images/logo.webp",
+                user: "Kowe",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Odgledao sam sve 3 epizode i mogu reći da sam prezadovoljan, baš ima mnogo materijala i novih stvari da se uči što do sad niko nije spominjao.",
+                avatar: "/testimonials/default.webp",
               },
               {
-                user: "Marin",
-                position: "Owner @ Trading Group",
-                message: "Review 5",
-                avatar: "/images/logo.webp",
+                user: "Yara",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Evo i ja ću da vas pohvalim, lekcije su odlične iako ih treba pogledati barem 3 puta. Tačno onako kako sam i očekivala od vas. Trejdala nisam ništa nego sam ovih dana radila backtest (replay tw) i poštovanje setupa je neverovatno (ako znaš šta tražiš). Sve u svemu sve pohvale.",
+                avatar: "/testimonials/yara.webp",
+              },
+              {
+                user: "Leo Kuna",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Da i ja dam neko svoje mišljenje, nikada nisam gledao i vidio po videima da netko koristi fib na log chartu tako da za prvu epizodu to je meni otkriće i onda kad se jos poveže s vremenom vidi se nadopunjavanje istih. Nastavliam dalje s gledanjem pa javljam kako mi se svidi, a za sada je super!",
+                avatar: "/testimonials/leokuna.webp",
               },
             ]}
           />
