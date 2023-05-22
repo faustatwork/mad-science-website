@@ -25,7 +25,7 @@ module.exports = {
       },
       colors: {
         brand: {
-          main: "#80EAEA",
+          main: "#4798ad",
         },
       },
     },
