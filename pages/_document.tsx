@@ -5,6 +5,13 @@ export default class MadScienceWebsiteDocument extends Document {
     return (
       <Html lang="sr">
         <Head>
+          {/* Google / Search Engine Tags */}
+          <meta itemProp="name" content="Mad Science" />
+          <meta itemProp="description" content="Mad Science" />
+          <meta
+            itemProp="image"
+            content="/favicon/android-chrome-512x512.png"
+          />
           {/* Meta tags */}
           <meta
             name="keywords"
