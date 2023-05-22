@@ -88,7 +88,7 @@ const Index: NextPage = () => {
           <div className="flex flex-row flex-wrap items-center justify-center gap-6">
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
               <Verified size={22} className="stroke-[#009dff]" />
-              Preko X zadovoljnih polaznika
+              Preko 20+ zadovoljnih polaznika
             </div>
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
               <Film size={22} className="stroke-[#7432c9]" />
@@ -198,7 +198,10 @@ const Index: NextPage = () => {
             <Tier
               title={"Essentials"}
               description={"Opis"}
-              features={["Pristup privatnom Discord serveru"]}
+              features={[
+                "Pristup privatnom Discord serveru",
+                "Osnove tehničke analize",
+              ]}
               models={[{ interval: "jednokratno", amount: 44 }]}
             />
             <Tier
