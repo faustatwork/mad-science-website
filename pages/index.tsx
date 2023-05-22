@@ -92,7 +92,7 @@ const Index: NextPage = () => {
             </div>
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
               <Film size={22} className="stroke-[#7432c9]" />
-              Preko X kontenta
+              Preko 40+ sati kontenta
             </div>
           </div>
           <p className="max-w-6xl text-center text-xl text-gray-500 dark:text-gray-400">
