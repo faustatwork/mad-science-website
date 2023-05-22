@@ -78,7 +78,7 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                   </div>
                   <div className="mt-8 flex flex-col items-start justify-start gap-5">
                     <p className="text-sm text-gray-900 dark:text-gray-300">
-                      USDT adresa
+                      USDT TRC20 Adresa
                     </p>
                     <CopyBlock value="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" />
                   </div>
