@@ -49,7 +49,7 @@ const Index: NextPage = () => {
               </svg>
             </p>
           </Link>
-          <h1 className="text-8xl font-bold text-blue-600 sm:text-4xl">
+          <h1 className="text-8xl font-bold text-brand-main sm:text-4xl">
             Mad Science
           </h1>
           <h2 className="text-5xl font-bold text-gray-500 sm:text-2xl">
