@@ -84,7 +84,7 @@ const Navbar = () => {
           </motion.button>
           <Link
             href={"/"}
-            className="flex flex-row items-center justify-center gap-5 text-2xl font-bold"
+            className="flex flex-row items-center justify-center gap-5 text-xl font-bold"
           >
             <Image
               alt="Mad Science logo"
@@ -100,7 +100,7 @@ const Navbar = () => {
           className={
             isWindowSizeSmall
               ? "hidden"
-              : "flex flex-row items-center justify-center gap-5 text-2xl font-bold"
+              : "flex flex-row items-center justify-center gap-5 text-xl font-bold"
           }
         >
           <Image alt="Mad Science logo" src={logo} height={30} quality={100} />
@@ -118,7 +118,7 @@ const Navbar = () => {
           <Link
             className={
               isWindowSizeSmall
-                ? "w-full  rounded-md bg-blue-600 px-4 py-2 text-center text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+                ? "w-full  rounded-md bg-blue-600 px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
                 : "hidden"
             }
             href={"/edukacija"}
@@ -133,7 +133,7 @@ const Navbar = () => {
           className={
             isWindowSizeSmall
               ? "hidden"
-              : "rounded-md bg-blue-600 px-4 py-2 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              : "rounded-md bg-blue-600 px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
           }
           href={"/edukacija"}
         >
