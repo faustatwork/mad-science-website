@@ -28,6 +28,10 @@ module.exports = {
           main: "#4798ad",
         },
       },
+      backgroundImage: {
+        dark: "url('/images/bg-dark.webp')",
+        light: "url('/images/bg-light.webp')",
+      },
     },
     plugins: [],
   },

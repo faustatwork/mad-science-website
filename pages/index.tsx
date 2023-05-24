@@ -24,59 +24,62 @@ const Index: NextPage = () => {
         <link rel="canonical" href="https://mad-science.io" />
       </Head>
       <Navbar />
-      <div id="hero">
-        <div className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 px-40 text-start sm:px-10">
+      <div
+        id="hero"
+        // eslint-disable-next-line tailwindcss/no-custom-classname
+        className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 bg-light bg-cover bg-center bg-no-repeat px-40 text-start dark:bg-dark sm:px-10"
+      >
+        <Link
+          href="/edukacija"
+          className="inline-flex flex-row items-center gap-x-4 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <span className="inline-block rounded-full bg-blue-600 px-3 py-1 text-white">
+            Novosti
+          </span>
+          <p className="flex items-center">
+            Edukacija Level 2 je dostupna
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </p>
+        </Link>
+        <h1 className="text-7xl font-bold text-brand-main sm:text-4xl">
+          Mad Science
+        </h1>
+        <h2 className="text-4xl font-bold text-gray-500 sm:text-2xl">
+          A small group that can do the math.
+        </h2>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
           <Link
-            href="/edukacija"
-            className="inline-flex flex-row items-center gap-x-6 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
+            href={"#edukacija"}
           >
-            <span className="inline-block rounded-full bg-blue-600 px-3 py-1 text-white">
-              Novosti
+            <span className="mr-2 inline-block align-middle">
+              <ShoppingCart size={18} strokeWidth={3} />
             </span>
-            <p className="flex items-center">
-              Edukacija Level 2 je dostupna
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </p>
+            Kupi kurs
           </Link>
-          <h1 className="text-8xl font-bold text-brand-main sm:text-4xl">
-            Mad Science
-          </h1>
-          <h2 className="text-5xl font-bold text-gray-500 sm:text-2xl">
-            A small group that can do the math.
-          </h2>
-          <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
-            <Link
-              className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
-              href={"#edukacija"}
-            >
-              <span className="mr-2 inline-block align-middle">
-                <ShoppingCart size={18} strokeWidth={3} />
-              </span>
-              Kupi kurs
-            </Link>
-            <Link
-              className="rounded-md px-5 py-3 text-lg font-medium text-black transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:text-white dark:focus:ring-blue-900 sm:px-3 sm:text-base"
-              href={"#onama"}
-            >
-              <span className="mr-2 inline-block align-middle">
-                <Info size={18} strokeWidth={3} />
-              </span>
-              O nama
-            </Link>
-          </div>
+          <Link
+            className="rounded-md px-5 py-3 text-lg font-medium text-black transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:text-white dark:focus:ring-blue-900 sm:px-3 sm:text-base"
+            href={"#onama"}
+          >
+            <span className="mr-2 inline-block align-middle">
+              <Info size={18} strokeWidth={3} />
+            </span>
+            O nama
+          </Link>
         </div>
       </div>
+
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
           id="onama"
