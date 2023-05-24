@@ -206,7 +206,7 @@ const Index: NextPage = () => {
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Naslov
+            Edukacija
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400">Opis</p>
           <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
