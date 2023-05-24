@@ -29,8 +29,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        dark: "url('/images/bg-dark.svg')",
-        light: "url('/images/bg-light.svg')",
+        dark: "url('/bg/bg-dark.svg')",
+        light: "url('/bg/bg-light.svg')",
       },
     },
     plugins: [],
