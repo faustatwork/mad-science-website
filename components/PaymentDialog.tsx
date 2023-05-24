@@ -58,7 +58,7 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="flex w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-2xl bg-white p-10 text-left align-middle shadow-xl transition-all dark:bg-zinc-900">
+                <Dialog.Panel className="flex w-full max-w-md flex-col items-center justify-center overflow-hidden rounded-2xl bg-white p-10 text-left align-middle shadow-xl transition-all dark:bg-zinc-900">
                   <Dialog.Title
                     as="p"
                     className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
@@ -76,11 +76,11 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                       height={200}
                     />
                   </div>
-                  <div className="mt-8 flex flex-col items-start justify-start gap-5">
+                  <div className="mt-8 flex w-full flex-col items-start justify-start gap-5">
                     <p className="text-sm text-gray-900 dark:text-gray-300">
                       USDT TRC20 Adresa
                     </p>
-                    <CopyBlock value="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" />
+                    <CopyBlock value="TBXic6mWhJcet2TdnDdzKhPiX867FDxrnd" />
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

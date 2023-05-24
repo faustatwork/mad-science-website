@@ -26,12 +26,12 @@ export default function CopyBlock({ value }: CopyBlockProps) {
 
   const btnStyle = copied ? "bg-gray-200 dark:bg-gray-800 " : "";
   return (
-    <div className="relative text-center">
+    <div className="relative w-full text-center">
       <button
         onClick={copyToClipboard}
         className={
           btnStyle +
-          "-mt-8 w-80 rounded border border-gray-200 bg-white px-4 py-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-600 dark:bg-zinc-900 dark:text-white dark:hover:bg-gray-700"
+          "-mt-8 w-full rounded border border-gray-200 bg-white px-4 py-3 text-sm text-black transition hover:bg-gray-300 dark:border-gray-600 dark:bg-zinc-900 dark:text-white dark:hover:bg-gray-700"
         }
       >
         <p className="overflow-hidden text-clip">
