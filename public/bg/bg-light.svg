@@ -225,6 +225,9 @@
 <rect x="1105.3" y="736.333" width="1.24267" height="1.24267" rx="0.621333" fill="#D9D9D9"/>
 </g>
 <rect x="0.560791" y="1142.68" width="1789.44" height="424.469" fill="url(#paint1_linear_102_2)"/>
+<rect x="1366" y="1678" width="1789.44" height="424.469" transform="rotate(-90 1366 1678)" fill="url(#paint2_linear_102_2)"/>
+<rect x="425" y="-111" width="1789.44" height="424.469" transform="rotate(90 425 -111)" fill="url(#paint3_linear_102_2)"/>
+<rect x="1790" y="424" width="1789.44" height="424.469" transform="rotate(-180 1790 424)" fill="url(#paint4_linear_102_2)"/>
 </g>
 <defs>
 <filter id="filter0_f_102_2" x="177.028" y="383.416" width="2149.81" height="924.633" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -237,6 +240,18 @@
 <stop offset="1" stop-color="#24214B" stop-opacity="0"/>
 </radialGradient>
 <linearGradient id="paint1_linear_102_2" x1="895.28" y1="1142.68" x2="895.28" y2="1567.15" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F4F4F4" stop-opacity="0"/>
+<stop offset="0.401042" stop-color="#F4F4F4"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_2" x1="2260.72" y1="1678" x2="2260.72" y2="2102.47" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F4F4F4" stop-opacity="0"/>
+<stop offset="0.401042" stop-color="#F4F4F4"/>
+</linearGradient>
+<linearGradient id="paint3_linear_102_2" x1="1319.72" y1="-111" x2="1319.72" y2="313.469" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F4F4F4" stop-opacity="0"/>
+<stop offset="0.401042" stop-color="#F4F4F4"/>
+</linearGradient>
+<linearGradient id="paint4_linear_102_2" x1="2684.72" y1="424" x2="2684.72" y2="848.469" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F4F4F4" stop-opacity="0"/>
 <stop offset="0.401042" stop-color="#F4F4F4"/>
 </linearGradient>

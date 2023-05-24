@@ -225,6 +225,9 @@
 <rect x="1104.74" y="736.333" width="1.24267" height="1.24267" rx="0.621333" fill="#D9D9D9"/>
 </g>
 <rect y="1142.68" width="1789.44" height="424.469" fill="url(#paint1_linear_102_285)"/>
+<rect x="1789.44" y="424" width="1789.44" height="424.469" transform="rotate(-180 1789.44 424)" fill="url(#paint2_linear_102_285)"/>
+<rect x="1365" y="1678" width="1789.44" height="424.469" transform="rotate(-90 1365 1678)" fill="url(#paint3_linear_102_285)"/>
+<rect x="424" y="-111" width="1789.44" height="424.469" transform="rotate(90 424 -111)" fill="url(#paint4_linear_102_285)"/>
 </g>
 <defs>
 <filter id="filter0_f_102_285" x="176.467" y="383.416" width="2149.81" height="924.633" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -239,6 +242,18 @@
 <linearGradient id="paint1_linear_102_285" x1="894.72" y1="1142.68" x2="894.72" y2="1567.15" gradientUnits="userSpaceOnUse">
 <stop stop-color="#101010" stop-opacity="0"/>
 <stop offset="0.401042" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_285" x1="2684.16" y1="424" x2="2684.16" y2="848.469" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="0.401042" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint3_linear_102_285" x1="2259.72" y1="1678" x2="2259.72" y2="2102.47" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="0.911458" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint4_linear_102_285" x1="1318.72" y1="-111" x2="1318.72" y2="313.469" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="0.911458" stop-color="#101010"/>
 </linearGradient>
 <clipPath id="clip0_102_285">
 <rect width="1789.44" height="1567" fill="white"/>
