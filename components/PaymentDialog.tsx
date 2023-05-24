@@ -16,8 +16,6 @@ interface PaymentDialogProps {
 const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
   const theme = useTheme();
 
-  // .
-
   useEffect(() => {
     if (isOpen) {
       document.documentElement.style.scrollBehavior = "auto";
