@@ -3,8 +3,8 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import qrDark from "../public/images/qr-dark.webp";
-import qrLight from "../public/images/qr-light.webp";
+import qrDark from "../public/payment/qr-dark.webp";
+import qrLight from "../public/payment/qr-light.webp";
 import CopyBlock from "./CopyBlock";
 import { useEffect } from "react";
 

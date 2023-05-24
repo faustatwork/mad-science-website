@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import useMediaQuery from "../utils/hooks/useMediaQuery";
 import { Book } from "lucide-react";
 import Image from "next/image";
-import logo from "../public/images/logo.webp";
+import logo from "../public/brand/logo.webp";
 import { motion } from "framer-motion";
 
 const Navbar = () => {

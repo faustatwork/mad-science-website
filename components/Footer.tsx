@@ -2,7 +2,7 @@ import Link from "next/link";
 import SwitchTheme from "./SwitchTheme";
 import { InstagramLogo, TelegramLogo, TikTokLogo, YouTubeLogo } from "./Logos";
 import Image from "next/image";
-import logo from "../public/images/logo.webp";
+import logo from "../public/brand/logo.webp";
 
 const Footer = () => {
   const footerNav = (
