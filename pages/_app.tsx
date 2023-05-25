@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { Toaster } from "react-hot-toast";
+import HTMLComment from "react-html-comment";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
