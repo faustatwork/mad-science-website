@@ -58,8 +58,9 @@ export default class MadScienceWebsiteDocument extends Document {
         </Head>
         <body
           dangerouslySetInnerHTML={{
-            __html:
-              "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
+            __html: `<!--
+            Developed and designed by Marin Heđeš <https://marinhedes.com>
+              -->`,
           }}
         >
           <Main />
