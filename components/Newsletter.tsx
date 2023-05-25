@@ -1,10 +1,8 @@
 import Link from "next/link";
-import {
-  SupabaseError,
-  addMailToList,
-} from "../pages/api/subscribe-newsletter";
+import { subscribeToNewsletter } from "../pages/api/subscribe-newsletter";
 import { toast } from "react-hot-toast";
 import { XCircle, CheckCircle2 } from "lucide-react";
+import { SupabaseError } from "../pages/api/newsletter";
 
 const Newsletter = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -12,7 +10,7 @@ const Newsletter = () => {
     event.preventDefault();
 
     try {
-      await addMailToList(event.target.newsletter_form_input.value);
+      await subscribeToNewsletter(event.target.newsletter_form_input.value);
       toast.custom(
         <div className="flex flex-row items-center justify-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
           <CheckCircle2 size={20} color="green" />

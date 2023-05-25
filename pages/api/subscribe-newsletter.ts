@@ -1,21 +1,29 @@
-import { supabase } from "../../lib/supabaseClient";
+import { SupabaseError } from "./newsletter";
 
-export type SupabaseError = {
-  code: string;
-  message: string;
-  details: string;
-  hint: string;
-};
+export async function subscribeToNewsletter(mail: string): Promise<void> {
+  if (!mail) {
+    throw new Error("Ovo polje ne može biti prazno");
+  }
 
-export async function addMailToList(mail: string): Promise<void> {
-  const { error } = await supabase.from("newsletter").insert({ mail });
+  const requestBody = {
+    mail: mail,
+  };
 
-  if (error) {
+  const response = await fetch("/api/newsletter", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(requestBody),
+  });
+
+  if (!response.ok) {
+    const errorData: SupabaseError = await response.json();
     const supabaseError: SupabaseError = {
-      message: error.message,
-      details: error.details,
-      hint: error.hint,
-      code: error.code,
+      message: errorData.message,
+      details: errorData.details,
+      hint: errorData.hint,
+      code: errorData.code,
     };
     throw supabaseError;
   }
