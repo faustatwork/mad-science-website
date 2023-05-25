@@ -15,7 +15,7 @@ const Navbar = () => {
       <li>
         <Link
           className="text-black transition hover:text-black/50 dark:text-white/50 dark:hover:text-white"
-          href={"https://mad-science.io/#onama"}
+          href={"/#onama"}
         >
           O nama
         </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
       <li>
         <Link
           className="text-black transition hover:text-black/50 dark:text-white/50 dark:hover:text-white"
-          href={"https://mad-science.io/#recenzije"}
+          href={"/#recenzije"}
         >
           Recenzije
         </Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
       <li>
         <Link
           className="text-black transition hover:text-black/50 dark:text-white/50 dark:hover:text-white"
-          href={"https://mad-science.io/#pitanja"}
+          href={"/#pitanja"}
         >
           Često postavljana pitanja
         </Link>

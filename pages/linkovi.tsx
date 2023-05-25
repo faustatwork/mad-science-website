@@ -18,10 +18,10 @@ const Linkovi: NextPage = () => {
         <title>Mad Science - Linkovi</title>
         <meta property="title" content="Mad Science - Linkovi" key="title" />
         <meta property="og:title" content="Mad Science - Linkovi" key="title" />
-        <meta name="description" content="Mad Science" />
-        <meta name="og:description" content="Mad Science" />
-        <meta property="og:url" content="https://mad-science.io" />
-        <link rel="canonical" href="https://mad-science.io" />
+        <meta name="description" content="Mad Science linkovi." />
+        <meta name="og:description" content="Mad Science linkovi." />
+        <meta property="og:url" content="https://mad-science.io/linkovi" />
+        <link rel="canonical" href="https://mad-science.io/linkovi" />
       </Head>
       <Navbar />
       <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-10 px-20 sm:px-10 sm:pt-48">
