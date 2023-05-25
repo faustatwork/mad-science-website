@@ -3,13 +3,7 @@ import Document, { Head, Html, Main, NextScript } from "next/document";
 export default class MadScienceWebsiteDocument extends Document {
   render() {
     return (
-      <Html
-        lang="sr"
-        dangerouslySetInnerHTML={{
-          __html:
-            "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
-        }}
-      >
+      <Html lang="sr">
         <Head>
           {/* Google / Search Engine Tags */}
           <meta itemProp="name" content="Mad Science" />
@@ -62,7 +56,12 @@ export default class MadScienceWebsiteDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
-        <body>
+        <body
+          dangerouslySetInnerHTML={{
+            __html:
+              "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
+          }}
+        >
           <Main />
           <NextScript />
         </body>
