@@ -26,6 +26,10 @@ body {
   padding-bottom: 60px !important;
 }
 
+.swiper-slide {
+  height: auto !important;
+}
+
 .swiper-pagination > .swiper-pagination-bullet {
   opacity: 0.2;
   background-color: #000000;
