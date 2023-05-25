@@ -56,13 +56,7 @@ export default class MadScienceWebsiteDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
-        <body
-          dangerouslySetInnerHTML={{
-            __html: `<!--
-            Developed and designed by Marin Heđeš <https://marinhedes.com>
-              -->`,
-          }}
-        >
+        <body>
           <Main />
           <NextScript />
         </body>

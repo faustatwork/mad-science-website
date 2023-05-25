@@ -18,7 +18,13 @@ function MadScienceWebsite({ Component, pageProps }: AppProps) {
         defaultTheme="system"
         attribute="class"
       >
-        <main className={inter.className}>
+        <main
+          className={inter.className}
+          dangerouslySetInnerHTML={{
+            __html:
+              "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
+          }}
+        >
           <Component {...pageProps} />
           <Toaster position="bottom-right" reverseOrder={false} />
         </main>
