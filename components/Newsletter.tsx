@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { addMailToList } from "../pages/api/subscribe-newsletter";
+import {
+  SupabaseError,
+  addMailToList,
+} from "../pages/api/subscribe-newsletter";
+import { toast } from "react-hot-toast";
+import { XCircle, CheckCircle2 } from "lucide-react";
 
 const Newsletter = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -8,11 +13,32 @@ const Newsletter = () => {
 
     try {
       await addMailToList(event.target.newsletter_form_input.value);
-      // eslint-disable-next-line no-console
-      console.log("Value added to Supabase");
+      toast.custom(
+        <div className="flex flex-row items-center justify-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
+          <CheckCircle2 size={20} color="green" />
+          <p className="text-[0.93rem] font-medium text-black dark:text-white ">
+            Uspješno ste se pretplatili na naš newsletter!
+          </p>
+        </div>,
+      );
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error(error);
+      const submitError = error as SupabaseError;
+      toast.custom(
+        <div className="flex flex-row items-center justify-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
+          <XCircle size={20} color="red" />
+          <div className="flex flex-col items-start justify-start gap-2">
+            <p className="text-[0.93rem] font-medium text-black dark:text-white ">
+              Došlo je do pogreške.
+            </p>
+            <p className="max-w-sm text-[0.88rem]">
+              Error:{" "}
+              <span className="text-gray-500 dark:text-gray-400">
+                {submitError.message}
+              </span>
+            </p>
+          </div>
+        </div>,
+      );
     }
   };
 
