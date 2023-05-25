@@ -1,9 +1,19 @@
 import Link from "next/link";
-import { FormEvent } from "react";
+import { addMailToList } from "../pages/api/subscribe-newsletter";
 
 const Newsletter = () => {
-  const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
+
+    try {
+      await addMailToList(event.target.newsletter_form_input.value);
+      // eslint-disable-next-line no-console
+      console.log("Value added to Supabase");
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(error);
+    }
   };
 
   return (
@@ -14,7 +24,7 @@ const Newsletter = () => {
         </h3>
         <p className="leading-relaxed text-blue-100">Opis</p>
         <form
-          onSubmit={handleOnSubmit}
+          onSubmit={handleSubmit}
           className="flex w-full max-w-xl items-center justify-center rounded-lg bg-white p-1 sm:max-w-full sm:flex-col"
           id="newsletter-form"
         >
