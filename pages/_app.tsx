@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 function MadScienceWebsite({ Component, pageProps }: AppProps) {
   return (
     <>
+      <HTMLComment text="Developed and designed by Marin Heđeš <https://marinhedes.com>" />
       <Head>
         <meta name="viewport" content="width=device-width" />
       </Head>
@@ -19,7 +20,6 @@ function MadScienceWebsite({ Component, pageProps }: AppProps) {
         defaultTheme="system"
         attribute="class"
       >
-        <HTMLComment text="Developed and designed by Marin Heđeš <https://marinhedes.com>" />
         <main className={inter.className}>
           <Component {...pageProps} />
           <Toaster position="bottom-right" reverseOrder={false} />
