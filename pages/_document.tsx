@@ -1,9 +1,11 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import HTMLComment from "react-html-comment";
 
 export default class MadScienceWebsiteDocument extends Document {
   render() {
     return (
       <Html lang="sr">
+        <HTMLComment text="Developed and designed by Marin Heđeš <https://marinhedes.com>" />
         <Head>
           {/* Google / Search Engine Tags */}
           <meta itemProp="name" content="Mad Science" />
