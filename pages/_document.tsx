@@ -3,7 +3,13 @@ import Document, { Head, Html, Main, NextScript } from "next/document";
 export default class MadScienceWebsiteDocument extends Document {
   render() {
     return (
-      <Html lang="sr">
+      <Html
+        lang="sr"
+        dangerouslySetInnerHTML={{
+          __html:
+            "<!-- Developed and designed by Marin Heđeš <https://marinhedes.com> -->",
+        }}
+      >
         <Head>
           {/* Google / Search Engine Tags */}
           <meta itemProp="name" content="Mad Science" />
