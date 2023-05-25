@@ -7,6 +7,8 @@ export type SupabaseError = {
   hint: string;
 };
 
+// .
+
 export async function addMailToList(mail: string): Promise<void> {
   const { error } = await supabase.from("newsletter").insert({ mail });
 
