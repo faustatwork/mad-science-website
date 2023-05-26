@@ -42,7 +42,7 @@ body {
 
 .dark .swiper-pagination > .swiper-pagination-bullet {
   opacity: 0.2;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .dark .swiper-pagination > .swiper-pagination-bullet-active {
