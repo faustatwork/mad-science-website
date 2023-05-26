@@ -22,12 +22,10 @@ body {
   background-color: rgb(16, 16, 16);
 }
 
+/* This code positions the pagination module and styles it to our liking */
+
 .swiper {
   padding-bottom: 60px !important;
-}
-
-.swiper-slide {
-  height: auto !important;
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
@@ -49,3 +47,10 @@ body {
   background-color: #2563eb;
   opacity: 1;
 }
+
+/* This makes all sliders follow the height of the biggest slider */
+
+.swiper-slide {
+  height: auto !important;
+}
+
