@@ -19,7 +19,7 @@ const Disclosure = ({ content }: DisclosureProps) => {
               key={index}
             >
               <summary className="flex cursor-pointer items-center justify-between">
-                <h2 className="text-lg font-medium text-black dark:text-white">
+                <h2 className="text-start text-lg font-medium text-black dark:text-white">
                   {item.question}
                 </h2>
                 <span className="relative ml-1.5 h-5 w-5 shrink-0">
@@ -53,7 +53,7 @@ const Disclosure = ({ content }: DisclosureProps) => {
                   </svg>
                 </span>
               </summary>
-              <h3 className="mt-4 leading-relaxed text-gray-500 dark:text-gray-300">
+              <h3 className="mt-4 text-start leading-relaxed text-gray-500 dark:text-gray-300">
                 {item.answer}
               </h3>
             </details>
