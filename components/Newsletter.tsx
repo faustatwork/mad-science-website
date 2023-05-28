@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { toast } from "react-hot-toast";
 import { XCircle, CheckCircle2 } from "lucide-react";
 import { SupabaseError } from "../types/supabase";
@@ -121,12 +120,6 @@ const Newsletter = () => {
         </form>
         <p className="text-sm text-white/60">
           Nikada ne šaljemo neželjene poruke, brinemo o zaštiti vaših podataka.
-          Pročitajte naš{" "}
-          <Link className="underline" href="/">
-            {" "}
-            Pravilnik o privatnosti
-          </Link>
-          .
         </p>
       </div>
     </>
