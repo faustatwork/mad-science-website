@@ -20,14 +20,8 @@ const Newsletter = () => {
       });
 
       if (!response.ok) {
-        const errorData: SupabaseError = await response.json();
-        const supabaseError: SupabaseError = {
-          message: errorData.message,
-          details: errorData.details,
-          hint: errorData.hint,
-          code: errorData.code,
-        };
-        throw supabaseError;
+        const errorData = await response.json();
+        throw errorData.error;
       }
 
       toast.custom(

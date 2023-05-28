@@ -2,9 +2,14 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { supabase } from "../../lib/supabaseClient";
 import { SupabaseError } from "../../types/supabase";
 
+interface NewsletterResponse {
+  success: boolean;
+  error?: SupabaseError;
+}
+
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse<NewsletterResponse>,
 ) {
   if (req.method === "POST") {
     const { mail } = req.body;
@@ -17,11 +22,13 @@ export default async function handler(
         hint: error.hint,
         code: error.code,
       };
-      res.status(400).json(supabaseError);
+      res.status(400).json({ success: false, error: supabaseError });
     } else {
-      res.status(200).end();
+      res.status(200).json({ success: true });
     }
   } else {
-    res.status(405).end();
+    res
+      .status(405)
+      .json({ success: false, error: { message: "Method Not Allowed" } });
   }
 }
