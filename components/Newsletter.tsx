@@ -2,8 +2,11 @@ import Link from "next/link";
 import { toast } from "react-hot-toast";
 import { XCircle, CheckCircle2 } from "lucide-react";
 import { SupabaseError } from "../types/supabase";
+import { useEffect, useState } from "react";
 
 const Newsletter = () => {
+  const [subscribersCount, setSubscribersCount] = useState(0);
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -57,6 +60,28 @@ const Newsletter = () => {
     }
   };
 
+  useEffect(() => {
+    async function fetchSubscriberCount() {
+      try {
+        const response = await fetch("/api/subscribers-count", {
+          method: "GET",
+        });
+        const data = await response.json();
+
+        if (response.ok) {
+          setSubscribersCount(data.count);
+        } else {
+          throw data.error as SupabaseError;
+        }
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error(error);
+      }
+    }
+
+    fetchSubscriberCount();
+  }, []);
+
   return (
     <>
       <div className="flex w-full flex-col items-center justify-center gap-7 rounded-2xl bg-blue-600 px-8 py-14 text-center sm:items-start sm:justify-start sm:text-start">
@@ -66,8 +91,8 @@ const Newsletter = () => {
         <p className="max-w-4xl leading-relaxed text-blue-100">
           Prijavite se za našu newsletter listu i dobijajte najnovije
           informacije direktno u vaš inbox. Ne propustite priliku da se
-          pridružite ostalih 0 pretplatnika i da unapredite svoje znanje i
-          veštine!
+          pridružite ostalih {subscribersCount} pretplatnika i da unapredite
+          svoje znanje i veštine!
         </p>
         <form
           onSubmit={handleSubmit}
