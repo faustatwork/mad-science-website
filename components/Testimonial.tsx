@@ -40,7 +40,7 @@ const Testimonial = ({ content }: TestimonialProps) => {
           return (
             <>
               <SwiperSlide key={index}>
-                <div className="flex h-full flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
+                <div className="flex h-full flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 text-start shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
                   <p className="leading-relaxed text-gray-700 dark:text-gray-200">
                     {item.message}
                   </p>
