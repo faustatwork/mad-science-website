@@ -21,7 +21,7 @@ const Newsletter = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw errorData.error;
+        throw errorData.error as SupabaseError;
       }
 
       toast.custom(
