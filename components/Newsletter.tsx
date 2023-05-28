@@ -2,7 +2,7 @@ import Link from "next/link";
 import { subscribeToNewsletter } from "../pages/api/subscribe-newsletter";
 import { toast } from "react-hot-toast";
 import { XCircle, CheckCircle2 } from "lucide-react";
-import { SupabaseError } from "../pages/api/newsletter";
+import { SupabaseError } from "../types/supabase";
 
 const Newsletter = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -31,7 +31,11 @@ const Newsletter = () => {
             <p className="max-w-sm text-[0.88rem]">
               Error:{" "}
               <span className="text-gray-500 dark:text-gray-400">
-                {submitError.message}
+                {submitError.message ===
+                // eslint-disable-next-line quotes
+                `duplicate key value violates unique constraint "newsletter_mail_key"`
+                  ? "Već ste pretplaćeni na naš newsletter."
+                  : submitError.message}
               </span>
             </p>
           </div>
@@ -46,7 +50,12 @@ const Newsletter = () => {
         <h3 className="text-3xl font-bold text-white">
           Pretplatite se na naš newsletter
         </h3>
-        <p className="leading-relaxed text-blue-100">Opis</p>
+        <p className="max-w-4xl leading-relaxed text-blue-100">
+          Prijavite se za našu newsletter listu i dobijajte najnovije
+          informacije direktno u vaš inbox. Ne propustite priliku da se
+          pridružite ostalih 0 pretplatnika i da unapredite svoje znanje i
+          veštine!
+        </p>
         <form
           onSubmit={handleSubmit}
           className="flex w-full max-w-xl items-center justify-center rounded-lg bg-white p-1 sm:max-w-full sm:flex-col"
