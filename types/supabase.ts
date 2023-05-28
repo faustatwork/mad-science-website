@@ -1,6 +1,6 @@
 export type SupabaseError = {
-  code: string;
+  code?: string;
   message: string;
-  details: string;
-  hint: string;
+  details?: string;
+  hint?: string;
 };

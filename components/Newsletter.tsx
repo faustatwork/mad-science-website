@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { subscribeToNewsletter } from "../pages/api/subscribe-newsletter";
 import { toast } from "react-hot-toast";
 import { XCircle, CheckCircle2 } from "lucide-react";
 import { SupabaseError } from "../types/supabase";
@@ -10,7 +9,27 @@ const Newsletter = () => {
     event.preventDefault();
 
     try {
-      await subscribeToNewsletter(event.target.newsletter_form_input.value);
+      const response = await fetch("/api/subscribe-newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          mail: event.target.newsletter_form_input.value,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData: SupabaseError = await response.json();
+        const supabaseError: SupabaseError = {
+          message: errorData.message,
+          details: errorData.details,
+          hint: errorData.hint,
+          code: errorData.code,
+        };
+        throw supabaseError;
+      }
+
       toast.custom(
         <div className="flex flex-row items-center justify-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
           <CheckCircle2 size={20} color="green" />
