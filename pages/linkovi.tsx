@@ -25,10 +25,10 @@ const Linkovi: NextPage = () => {
       </Head>
       <Navbar />
       <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-10 px-20 sm:px-10 sm:pt-48">
-        <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+        <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
           Linkovi
         </p>
-        <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+        <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
           Svi linkovi gdje nas možete naći.
         </p>
         <Links

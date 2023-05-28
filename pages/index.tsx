@@ -79,13 +79,12 @@ const Index: NextPage = () => {
           </Link>
         </div>
       </div>
-
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
           id="onama"
-          className="flex w-full flex-col items-center justify-center gap-10"
+          className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
-          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
             Tko smo mi?
           </p>
           <div className="flex flex-row flex-wrap items-center justify-center gap-6">
@@ -98,7 +97,7 @@ const Index: NextPage = () => {
               Preko 40+ sati kontenta
             </div>
           </div>
-          <p className="max-w-6xl text-center text-xl text-gray-500 dark:text-gray-400">
+          <p className="max-w-6xl text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
             Mad Science čine četiri konstanto profitabilna trejdera koji imaju
             iste ciljeve, vrlo slično razmišljaju, imaju vrlo specifične
             pristupe marketu, a opet dolaze do istih rezultata. Zapravo, mi
@@ -125,12 +124,12 @@ const Index: NextPage = () => {
         </section>
         <section
           id="recenzije"
-          className="flex w-full flex-col items-center justify-center gap-10"
+          className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
-          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
             Što kažu ljudi o nama
           </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
             Uzmite njihovu riječ, ne našu.
           </p>
           <Testimonial
@@ -182,12 +181,12 @@ const Index: NextPage = () => {
         </section>
         <section
           id="partneri"
-          className="flex h-fit w-full flex-col items-center justify-center gap-10"
+          className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
-          <p className="text-center text-5xl font-bold text-black dark:text-white md:text-3xl">
+          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
             Partneri
           </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400">
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
             Partnerisali smo se s tvrtkama navedenim ispod, iskoristite naš kod
             &apos;MADSCIENCE&apos; na njihovoj platformi za nešto i nešto.
           </p>
@@ -205,10 +204,12 @@ const Index: NextPage = () => {
           id="edukacija"
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
-          <p className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
             Edukacija
           </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">Opis</p>
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
+            Opis
+          </p>
           <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
             <Tier
               title={"Essentials"}
@@ -246,16 +247,16 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section
-          className="flex w-full items-center justify-center"
+          className="flex w-full flex-col items-center justify-center gap-10 text-center"
           id="pitanja"
         >
-          <div className="flex w-10/12 max-w-5xl flex-col items-start justify-start gap-10 sm:w-full">
-            <p className="text-3xl font-bold text-black dark:text-white">
-              Često postavljana pitanja
-            </p>
-            <p className="text-lg text-gray-500 dark:text-gray-400">
-              Svi odgovori na sva vaša pitanja.
-            </p>
+          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
+            Često postavljana pitanja
+          </p>
+          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
+            Svi odgovori na sva vaša pitanja.
+          </p>
+          <div className="flex w-10/12 max-w-5xl sm:w-full">
             <Disclosure
               content={[
                 {
