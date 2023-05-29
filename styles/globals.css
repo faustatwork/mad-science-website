@@ -1,3 +1,6 @@
+@import "react-medium-image-zoom/dist/styles.css";
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,4 +56,12 @@ body {
 .swiper-slide {
   height: auto !important;
 }
+
+/* This makes the background blurred behind the zoomed in image */
+
+[data-rmiz-modal-overlay="visible"] {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  filter: brightness(20%);
+ }
 
