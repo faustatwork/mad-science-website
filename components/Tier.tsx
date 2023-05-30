@@ -54,21 +54,24 @@ const Tier = ({
         </p>
         <div className="my-8 flex items-center justify-center">
           <span className="mr-2 text-4xl font-extrabold sm:text-3xl">
-            ${getAmountForInterval() ?? models[0].amount}
+            $
+            {disabled ? "???" : `${getAmountForInterval() ?? models[0].amount}`}
           </span>
-          <select
-            className="cursor-pointer rounded-md bg-transparent p-1 text-sm text-gray-600 outline-none transition hover:scale-105 hover:bg-gray-200 hover:shadow-xl hover:shadow-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:shadow-gray-800"
-            value={recurringInterval ?? models[0].interval}
-            onChange={e => setRecurringInterval(e.target.value)}
-          >
-            {models.map(e => {
-              return (
-                <>
-                  <option value={e.interval}>{e.interval}</option>
-                </>
-              );
-            })}
-          </select>
+          {disabled ? null : (
+            <select
+              className="cursor-pointer rounded-md bg-transparent p-1 text-sm text-gray-600 outline-none transition hover:scale-105 hover:bg-gray-200 hover:shadow-xl hover:shadow-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:shadow-gray-800"
+              value={recurringInterval ?? models[0].interval}
+              onChange={e => setRecurringInterval(e.target.value)}
+            >
+              {models.map(e => {
+                return (
+                  <>
+                    <option value={e.interval}>{e.interval}</option>
+                  </>
+                );
+              })}
+            </select>
+          )}
         </div>
         <ul role="list" className="mb-8 space-y-4 text-left">
           {features.map((feature, index) => {
@@ -86,13 +89,17 @@ const Tier = ({
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>{feature}</span>
+                <span>{disabled ? "???" : feature}</span>
               </li>
             );
           })}
         </ul>
         <Button
-          text={`Kupi ($${getAmountForInterval() ?? models[0].amount})`}
+          text={
+            disabled
+              ? "???"
+              : `Kupi ($${getAmountForInterval() ?? models[0].amount})`
+          }
           size={"lg"}
           color={"primary"}
           action={() => setOpenDialog(!openDialog)}
