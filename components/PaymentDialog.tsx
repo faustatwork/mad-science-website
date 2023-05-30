@@ -7,6 +7,7 @@ import qrDark from "../public/payment/qr-dark.svg";
 import qrLight from "../public/payment/qr-light.svg";
 import CopyBlock from "./CopyBlock";
 import { useEffect } from "react";
+import { AlertCircle } from "lucide-react";
 
 interface PaymentDialogProps {
   isOpen: boolean;
@@ -65,7 +66,7 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                   >
                     Kupi kurs
                   </Dialog.Title>
-                  <div className="mt-2">
+                  <div className="mt-4">
                     <p className="text-sm text-gray-400">Opis</p>
                   </div>
                   <div className="mt-4">
@@ -81,6 +82,17 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                       USDT TRC20 Adresa
                     </p>
                     <CopyBlock value="TBXic6mWhJcet2TdnDdzKhPiX867FDxrnd" />
+                  </div>
+                  <div className="mt-6 flex flex-row items-center justify-center gap-5">
+                    <AlertCircle
+                      size={24}
+                      className="text-gray-400 dark:text-gray-600"
+                    />
+                    <p className="w-full text-sm text-gray-400 dark:text-gray-600">
+                      Da biste dobili pristup kursu, potrebno je nakon uplate
+                      javiti se adminu putem Telegrama, njegov username je:
+                      N3M_332
+                    </p>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
