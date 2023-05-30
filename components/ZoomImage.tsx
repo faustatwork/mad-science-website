@@ -18,7 +18,7 @@ const ZoomImage = ({ images }: ZoomImageProps) => {
                   src={image}
                   priority
                   quality={100}
-                  className="min-w-[8rem] max-w-[16rem] rounded-md transition duration-200 ease-in hover:scale-105 sm:max-w-[5rem]"
+                  className="max-w-[16rem] rounded-md transition duration-200 ease-in hover:scale-105 sm:max-w-[5rem]"
                 />
               </Zoom>
             </>
