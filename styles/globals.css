@@ -64,13 +64,6 @@ body {
   backdrop-filter: blur(10px);
  }
 
- /* This hides the zoom/unzoom icons */
-
- [data-rmiz-btn-zoom],
-[data-rmiz-btn-unzoom] {
-visibility: hidden;
-}
-
  /* This rounds the corners on the zoomed in image */
 
 [data-rmiz-modal-img] {
