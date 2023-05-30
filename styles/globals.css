@@ -64,3 +64,7 @@ body {
   backdrop-filter: blur(10px);
  }
 
+ [data-rmiz-btn-zoom],
+[data-rmiz-btn-unzoom] {
+visibility: hidden;
+}
