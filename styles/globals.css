@@ -70,3 +70,7 @@ body {
 [data-rmiz-btn-unzoom] {
 visibility: hidden;
 }
+
+[data-rmiz-modal-img] {
+border-radius: 16px;
+}
