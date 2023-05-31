@@ -37,7 +37,7 @@ body {
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
-  background-color: #2563eb;
+  background-color: #4798ad;
   opacity: 1;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .dark .swiper-pagination > .swiper-pagination-bullet-active {
-  background-color: #2563eb;
+  background-color: #4798ad;
   opacity: 1;
 }
 

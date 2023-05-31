@@ -58,7 +58,7 @@ const Links = ({ items }: LinksArray) => {
                 }}
               />
               <div className="flex flex-col items-start justify-start gap-4">
-                <div className="h-8 w-8 text-blue-600">{item.icon}</div>
+                <div className="text-brand-primary h-8 w-8">{item.icon}</div>
                 <div className="flex flex-col items-start justify-start gap-2">
                   <p className="text-lg font-medium text-black/80 dark:text-gray-200">
                     {item.name}

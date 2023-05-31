@@ -118,7 +118,7 @@ const Navbar = () => {
           <Link
             className={
               isWindowSizeSmall
-                ? "w-full  rounded-md bg-blue-600 px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+                ? "w-full rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary"
                 : "hidden"
             }
             href={"/edukacija"}
@@ -133,7 +133,7 @@ const Navbar = () => {
           className={
             isWindowSizeSmall
               ? "hidden"
-              : "rounded-md bg-blue-600 px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+              : "rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary"
           }
           href={"/edukacija"}
         >

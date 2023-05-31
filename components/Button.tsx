@@ -6,9 +6,9 @@ const button = tv({
   variants: {
     color: {
       primary:
-        "bg-blue-600 text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900",
+        "bg-brand-primary text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary",
       secondary:
-        "border-2 border-blue-600 text-blue-600 transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900",
+        "border-2 border-brand-primary text-brand-primary transition hover:scale-105 hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary",
     },
     size: {
       sm: "px-3 py-2 text-sm",

@@ -83,11 +83,11 @@ const Newsletter = () => {
 
   return (
     <>
-      <div className="flex w-full flex-col items-center justify-center gap-7 rounded-2xl bg-blue-600 px-8 py-14 text-center sm:items-start sm:justify-start sm:text-start">
+      <div className="flex w-full flex-col items-center justify-center gap-7 rounded-2xl bg-brand-hover px-8 py-14 text-center sm:items-start sm:justify-start sm:text-start">
         <h3 className="text-3xl font-bold text-white">
           Pretplatite se na naš newsletter
         </h3>
-        <p className="max-w-4xl leading-relaxed text-blue-100">
+        <p className="max-w-4xl leading-relaxed text-white/80">
           Prijavite se za našu newsletter listu i dobijajte najnovije
           informacije direktno u vaš inbox. Ne propustite priliku da se
           pridružite ostalih {subscribersCount} pretplatnika i da unapredite
@@ -112,7 +112,7 @@ const Newsletter = () => {
           />
           <input
             type="submit"
-            className="w-48 cursor-pointer rounded-lg bg-blue-600 p-2 px-3 font-medium text-white shadow-md outline-none duration-150 hover:bg-blue-500 focus:shadow-none active:bg-blue-700 sm:w-full sm:px-4"
+            className="w-48 cursor-pointer rounded-lg bg-brand-primary p-2 px-3 font-medium text-white shadow-md outline-none duration-150 hover:bg-brand-hover focus:shadow-none active:bg-brand-primary sm:w-full sm:px-4"
             form="newsletter-form"
             aria-label="subscribe to newsletter button"
             value={"Pretplati se"}

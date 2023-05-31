@@ -28,7 +28,7 @@ const Error404: NextPage = () => {
         <p className="text-gray-500 ">Ova stranica ne postoji.</p>
         <Link
           href="/"
-          className="inline-block rounded bg-blue-600 px-5 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900"
+          className="rounded-md bg-brand-primary px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
         >
           <span className="mr-2 inline-block align-middle">
             <ArrowLeft size={20} />

@@ -33,7 +33,6 @@ const Testimonial = ({ content }: TestimonialProps) => {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="mySwiper h-full w-full"
       >
         {content.map((item, index) => {

@@ -26,7 +26,7 @@ const Tier = ({
   const [recurringInterval, setRecurringInterval] = useState<string>();
 
   const isRecommended = recommended
-    ? "border-2 border-blue-600 shadow-2xl shadow-blue-400/75 p-12 "
+    ? "border-2 border-brand-primary shadow-2xl shadow-[#4798ad]/75 p-12 "
     : "border border-gray-200 shadow dark:border-gray-600 py-6 px-12  ";
 
   const getAmountForInterval = () => {

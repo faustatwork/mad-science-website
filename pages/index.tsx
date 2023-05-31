@@ -29,14 +29,13 @@ const Index: NextPage = () => {
       <Navbar />
       <div
         id="hero"
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-8 bg-light bg-cover bg-center bg-no-repeat px-40 text-start dark:bg-dark sm:gap-5 sm:px-10"
       >
         <Link
           href="/edukacija"
           className="inline-flex flex-row items-center gap-x-4 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
-          <span className="inline-block rounded-full bg-blue-600 px-3 py-1 text-white">
+          <span className="inline-block rounded-full bg-brand-primary px-3 py-1 text-white">
             Novosti
           </span>
           <p className="flex items-center">
@@ -55,7 +54,7 @@ const Index: NextPage = () => {
             </svg>
           </p>
         </Link>
-        <h1 className="text-7xl font-bold text-brand-main sm:text-4xl">
+        <h1 className="text-7xl font-bold text-brand-primary sm:text-4xl">
           Mad Science
         </h1>
         <h2 className="text-4xl font-medium text-gray-500 sm:text-2xl">
@@ -63,7 +62,7 @@ const Index: NextPage = () => {
         </h2>
         <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
           <Link
-            className="rounded-md bg-blue-600 px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-blue-700 hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 sm:px-3 sm:text-base"
+            className="rounded-md bg-brand-primary px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
             href={"#edukacija"}
           >
             <span className="mr-2 inline-block align-middle">
@@ -72,7 +71,7 @@ const Index: NextPage = () => {
             Kupi kurs
           </Link>
           <Link
-            className="rounded-md px-5 py-3 text-lg font-medium text-black transition hover:scale-105 hover:bg-blue-700 hover:text-white hover:shadow-xl focus:ring-4 focus:ring-blue-200 dark:text-white dark:focus:ring-blue-900 sm:px-3 sm:text-base"
+            className="rounded-md border-2 border-[#4798ad] px-5 py-3 text-lg font-medium text-black/75 transition hover:scale-105  hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary dark:text-white/75 sm:px-3 sm:text-base"
             href={"#onama"}
           >
             <span className="mr-2 inline-block align-middle">

@@ -36,6 +36,7 @@
       { "argsIgnorePattern": "^_", "ignoreRestSiblings": true }
     ],
     "@typescript-eslint/no-inferrable-types": "off",
+    "tailwindcss/no-custom-classnames": "off",
     "no-restricted-syntax": [
       "error",
       {

@@ -25,7 +25,9 @@ module.exports = {
       },
       colors: {
         brand: {
-          main: "#4798ad",
+          primary: "#4798ad",
+          secondary: "#51b0c9",
+          hover: "#186578",
         },
       },
       backgroundImage: {
