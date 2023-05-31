@@ -40,7 +40,14 @@ const Tier = ({
 
   return (
     <>
-      <PaymentDialog isOpen={openDialog} setIsOpen={setOpenDialog} />
+      <PaymentDialog
+        isOpen={openDialog}
+        setIsOpen={setOpenDialog}
+        title={`Kupi ${title} edukaciju ($${
+          getAmountForInterval() ?? models[0].amount
+        } - ${recurringInterval ?? models[0].interval})`}
+        desc={"Opis"}
+      />
       <div
         className={
           isRecommended +

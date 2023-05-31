@@ -12,9 +12,16 @@ import { AlertCircle } from "lucide-react";
 interface PaymentDialogProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
+  title: string;
+  desc: string;
 }
 
-const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
+const PaymentDialog = ({
+  isOpen,
+  setIsOpen,
+  title,
+  desc,
+}: PaymentDialogProps) => {
   const theme = useTheme();
 
   useEffect(() => {
@@ -62,14 +69,14 @@ const PaymentDialog = ({ isOpen, setIsOpen }: PaymentDialogProps) => {
                 <Dialog.Panel className="flex w-full max-w-md flex-col items-center justify-center overflow-hidden rounded-2xl bg-white p-10 text-left align-middle shadow-xl transition-all dark:bg-zinc-900">
                   <Dialog.Title
                     as="p"
-                    className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
+                    className="text-center text-lg font-medium leading-6 text-gray-900 dark:text-white"
                   >
-                    Kupi kurs
+                    {title}
                   </Dialog.Title>
-                  <div className="mt-4">
-                    <p className="text-sm text-gray-400">Opis</p>
+                  <div className="mt-5 text-center">
+                    <p className="w-full text-sm text-gray-500">{desc}</p>
                   </div>
-                  <div className="mt-4">
+                  <div className="mt-5">
                     <Image
                       src={theme.resolvedTheme === "dark" ? qrDark : qrLight}
                       alt="qr code for payment address"
