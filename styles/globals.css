@@ -67,5 +67,5 @@ body {
  /* This rounds the corners on the zoomed in image */
 
 [data-rmiz-modal-img] {
-border-radius: 16px;
+border-radius: 2rem;
 }
