@@ -30,7 +30,7 @@ const Index: NextPage = () => {
       <div
         id="hero"
         // eslint-disable-next-line tailwindcss/no-custom-classname
-        className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-10 bg-light bg-cover bg-center bg-no-repeat px-40 text-start dark:bg-dark sm:px-10"
+        className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-8 bg-light bg-cover bg-center bg-no-repeat px-40 text-start dark:bg-dark sm:gap-5 sm:px-10"
       >
         <Link
           href="/edukacija"
@@ -58,7 +58,7 @@ const Index: NextPage = () => {
         <h1 className="text-7xl font-bold text-brand-main sm:text-4xl">
           Mad Science
         </h1>
-        <h2 className="text-4xl font-bold text-gray-500 sm:text-2xl">
+        <h2 className="text-4xl font-medium text-gray-500 sm:text-2xl">
           A small group that can do the math.
         </h2>
         <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
