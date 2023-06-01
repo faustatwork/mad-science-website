@@ -60,7 +60,7 @@ const Index: NextPage = () => {
         <h2 className="text-4xl font-medium text-gray-500 sm:text-2xl">
           A small group that can do the math.
         </h2>
-        <div className="flex flex-row flex-wrap items-start justify-start gap-10 sm:gap-7">
+        <div className="flex flex-row flex-wrap items-center justify-start gap-10 sm:gap-7">
           <Link
             className="rounded-md bg-brand-primary px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
             href={"#edukacija"}
@@ -71,7 +71,7 @@ const Index: NextPage = () => {
             Kupi kurs
           </Link>
           <Link
-            className="rounded-md border-2 border-[#4798ad] px-5 py-3 text-lg font-medium text-black/75 transition hover:scale-105  hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary dark:text-white/75 sm:px-3 sm:text-base"
+            className="rounded-md border-2 border-brand-primary px-5 py-3 text-lg font-medium text-brand-primary transition hover:scale-105  hover:border-transparent hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
             href={"#onama"}
           >
             <span className="mr-2 inline-block align-middle">
