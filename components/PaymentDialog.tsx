@@ -8,6 +8,7 @@ import qrLight from "../public/payment/qr-light.svg";
 import CopyBlock from "./CopyBlock";
 import { useEffect } from "react";
 import { AlertCircle } from "lucide-react";
+import Link from "next/link";
 
 interface PaymentDialogProps {
   isOpen: boolean;
@@ -97,8 +98,14 @@ const PaymentDialog = ({
                     />
                     <p className="w-full text-sm text-gray-400 dark:text-gray-600">
                       Da biste dobili pristup kursu, potrebno je nakon uplate
-                      javiti se adminu putem Telegrama, njegov username je:
-                      N3M_332
+                      javiti se adminu putem Telegrama klikom{" "}
+                      <Link
+                        className="font-medium underline"
+                        href="https://t.me/N3M_332"
+                      >
+                        ovdje
+                      </Link>
+                      .
                     </p>
                   </div>
                 </Dialog.Panel>
