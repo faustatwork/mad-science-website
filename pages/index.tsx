@@ -29,57 +29,67 @@ const Index: NextPage = () => {
       <Navbar />
       <div
         id="hero"
-        className="mb-4 flex h-screen w-full flex-col items-start justify-center gap-8 bg-light bg-cover bg-center bg-no-repeat px-40 text-start dark:bg-dark sm:gap-5 sm:px-10"
+        className="mb-4 flex h-screen w-full flex-row items-center justify-between bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark lg:flex-col lg:justify-center lg:gap-10 lg:text-center sm:px-10"
       >
-        <Link
-          href="/edukacija"
-          className="inline-flex flex-row items-center gap-x-4 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <span className="inline-block rounded-full bg-brand-primary px-3 py-1 text-white">
-            Novosti
-          </span>
-          <p className="flex items-center">
-            Edukacija Level 2 je dostupna
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="h-5 w-5"
+        <div className="flex flex-col items-start justify-center gap-8 lg:items-center sm:gap-5">
+          <Link
+            href="/edukacija"
+            className="inline-flex flex-row items-center gap-x-4 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <span className="inline-block rounded-full bg-brand-primary px-3 py-1 text-white">
+              Novosti
+            </span>
+            <p className="flex items-center text-start">
+              Edukacija Level 2 je dostupna
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </p>
+          </Link>
+          <h1 className="text-5xl font-bold text-brand-primary sm:text-4xl">
+            Mad Science
+          </h1>
+          <h2 className="text-3xl font-medium text-gray-500 sm:text-2xl">
+            A small group that can do the math.
+          </h2>
+          <div className="flex flex-row flex-wrap items-center justify-start gap-10 sm:gap-7">
+            <Link
+              className="rounded-md bg-brand-primary px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
+              href={"#edukacija"}
             >
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </p>
-        </Link>
-        <h1 className="text-7xl font-bold text-brand-primary sm:text-4xl">
-          Mad Science
-        </h1>
-        <h2 className="text-4xl font-medium text-gray-500 sm:text-2xl">
-          A small group that can do the math.
-        </h2>
-        <div className="flex flex-row flex-wrap items-center justify-start gap-10 sm:gap-7">
-          <Link
-            className="rounded-md bg-brand-primary px-5 py-3 text-lg font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
-            href={"#edukacija"}
-          >
-            <span className="mr-2 inline-block align-middle">
-              <ShoppingCart size={18} strokeWidth={3} />
-            </span>
-            Kupi kurs
-          </Link>
-          <Link
-            className="rounded-md border-2 border-brand-primary px-5 py-3 text-lg font-medium text-brand-primary transition hover:scale-105  hover:border-transparent hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
-            href={"#onama"}
-          >
-            <span className="mr-2 inline-block align-middle">
-              <Info size={18} strokeWidth={3} />
-            </span>
-            O nama
-          </Link>
+              <span className="mr-2 inline-block align-middle">
+                <ShoppingCart size={18} strokeWidth={3} />
+              </span>
+              Kupi kurs
+            </Link>
+            <Link
+              className="rounded-md border-2 border-brand-primary px-5 py-3 text-lg font-medium text-brand-primary transition hover:scale-105  hover:border-transparent hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
+              href={"#onama"}
+            >
+              <span className="mr-2 inline-block align-middle">
+                <Info size={18} strokeWidth={3} />
+              </span>
+              O nama
+            </Link>
+          </div>
         </div>
+        <video
+          controls
+          autoPlay
+          controlsList="nodownload"
+          className="w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 lg:w-9/12 sm:w-full"
+        >
+          <source src="/videos/intro.webm" type="video/webm" />
+        </video>
       </div>
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
