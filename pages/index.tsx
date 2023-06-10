@@ -86,7 +86,7 @@ const Index: NextPage = () => {
           controls
           autoPlay
           controlsList="nodownload"
-          className="w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 lg:w-9/12 sm:w-full"
+          className="w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 sm:w-full"
         >
           <source src="/videos/intro.mp4" type="video/mp4" />
         </video>
