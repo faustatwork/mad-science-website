@@ -88,7 +88,7 @@ const Index: NextPage = () => {
           controlsList="nodownload"
           className="w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 lg:w-9/12 sm:w-full"
         >
-          <source src="/videos/intro.webm" type="video/webm" />
+          <source src="/videos/intro.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
