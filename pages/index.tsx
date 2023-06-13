@@ -10,9 +10,6 @@ import { ShoppingCart, Info, Verified, Film } from "lucide-react";
 import Newsletter from "../components/Newsletter";
 import Partners from "../components/Partners";
 import { FinotiveLogo } from "../components/Logos";
-import ZoomImage from "../components/ZoomImage";
-
-import placeholderimage from "../public/testimonials/yara.webp";
 
 const Index: NextPage = () => {
   return (
@@ -188,26 +185,6 @@ const Index: NextPage = () => {
                   "Da i ja dam neko svoje mišljenje, nikada nisam gledao i vidio po videima da netko koristi fib na log chartu tako da za prvu epizodu to je meni otkriće i onda kad se jos poveže s vremenom vidi se nadopunjavanje istih. Nastavliam dalje s gledanjem pa javljam kako mi se svidi, a za sada je super!",
                 avatar: "/testimonials/leokuna.webp",
               },
-            ]}
-          />
-        </section>
-        <section
-          id="slike"
-          className="flex w-full flex-col items-center justify-center gap-10 text-center"
-        >
-          <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
-            Ime
-          </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
-            Opis
-          </p>
-          <ZoomImage
-            images={[
-              placeholderimage,
-              placeholderimage,
-              placeholderimage,
-              placeholderimage,
-              placeholderimage,
             ]}
           />
         </section>
