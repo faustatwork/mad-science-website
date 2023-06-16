@@ -222,10 +222,7 @@ const Index: NextPage = () => {
             <Tier
               title={"Essentials"}
               description={"Opis"}
-              features={[
-                "Pristup privatnom Discord serveru",
-                "Osnove tehničke analize",
-              ]}
+              features={["Osnove tehničke analize", "Popust za Level 2.0"]}
               models={[{ interval: "jednokratno", amount: 44 }]}
             />
             <Tier
@@ -235,8 +232,9 @@ const Index: NextPage = () => {
                 "MAD Concept",
                 "GC Algo Concept",
                 "Live trading",
-                "Pristup privatnom Discord serveru",
+                "Pristup privatnoj Telegram grupi",
                 "Weekly outlook",
+                "Daily updates",
               ]}
               models={[
                 { interval: "1 mjesec", amount: 80 },
