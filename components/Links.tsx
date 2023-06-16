@@ -11,7 +11,6 @@ interface LinksArray {
 interface LinksProps {
   icon: ReactNode;
   name: string;
-  desc: string;
   href: string;
 }
 
@@ -42,7 +41,7 @@ const Links = ({ items }: LinksArray) => {
               key={idx}
               href={item.href}
               target="_blank"
-              className="group relative h-fit rounded-xl border border-gray-200 bg-white p-8 dark:border-gray-600 dark:bg-gray-800"
+              className="group relative h-fit rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-600 dark:bg-gray-800"
               onMouseMove={handleMouseMove}
             >
               <motion.div
@@ -57,14 +56,11 @@ const Links = ({ items }: LinksArray) => {
           `,
                 }}
               />
-              <div className="flex flex-col items-start justify-start gap-4">
+              <div className="flex flex-col items-center justify-center gap-4">
                 <div className="h-8 w-8 text-brand-primary">{item.icon}</div>
                 <div className="flex flex-col items-start justify-start gap-2">
                   <p className="text-lg font-medium text-black/80 dark:text-gray-200">
                     {item.name}
-                  </p>
-                  <p className="text-base text-black/70 dark:text-gray-400">
-                    {item.desc}
                   </p>
                 </div>
               </div>

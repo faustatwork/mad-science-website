@@ -9,7 +9,6 @@ import {
   YouTubeLogo,
 } from "../components/Logos";
 import Links from "../components/Links";
-import { Book } from "lucide-react";
 
 const Linkovi: NextPage = () => {
   return (
@@ -37,31 +36,21 @@ const Linkovi: NextPage = () => {
               icon: <InstagramLogo />,
               href: "/instagram",
               name: "Instagram",
-              desc: "Instagram",
             },
             {
               icon: <TelegramLogo />,
               href: "/telegram",
               name: "Telegram",
-              desc: "Telegram",
             },
             {
               icon: <TikTokLogo />,
               href: "/tiktok",
               name: "TikTok",
-              desc: "TikTok",
             },
             {
               icon: <YouTubeLogo />,
               href: "/youtube",
               name: "YouTube",
-              desc: "YouTube",
-            },
-            {
-              icon: <Book size={26} />,
-              href: "/edukacija",
-              name: "Edukacija",
-              desc: "Edukacija",
             },
           ]}
         />
