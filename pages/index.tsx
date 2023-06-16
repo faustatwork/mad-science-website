@@ -79,14 +79,13 @@ const Index: NextPage = () => {
             </Link>
           </div>
         </div>
-        <video
-          controls
-          autoPlay
-          controlsList="nodownload"
-          className="w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 sm:w-full"
-        >
-          <source src="/videos/intro.mp4" type="video/mp4" />
-        </video>
+        <iframe
+          className="h-[43%] w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 sm:w-full"
+          src="https://www.youtube-nocookie.com/embed/GHKC3fcMBaE"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
       </div>
       <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
         <section
