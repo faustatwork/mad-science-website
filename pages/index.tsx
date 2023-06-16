@@ -26,9 +26,9 @@ const Index: NextPage = () => {
       <Navbar />
       <div
         id="hero"
-        className="mb-4 flex h-screen w-full flex-row items-center justify-between bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark lg:flex-col lg:justify-center lg:gap-10 lg:text-center sm:px-10"
+        className="mb-4 flex min-h-screen w-full flex-row items-center justify-between bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark lg:mb-20 lg:flex-col lg:justify-center lg:gap-10 lg:pt-40 lg:text-center sm:px-10"
       >
-        <div className="flex flex-col items-start justify-center gap-8 lg:items-center sm:gap-5">
+        <div className="flex h-full flex-col items-start justify-center gap-8 lg:items-center sm:gap-5">
           <Link
             href="/edukacija"
             className="inline-flex flex-row items-center gap-x-4 rounded-full border border-gray-200 bg-white p-2 pr-6 text-sm font-medium duration-150 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -80,7 +80,7 @@ const Index: NextPage = () => {
           </div>
         </div>
         <iframe
-          className="h-[43%] w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 sm:w-full"
+          className="h-[28rem] w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 lg:w-9/12 sm:w-full"
           src="https://www.youtube-nocookie.com/embed/GHKC3fcMBaE"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
