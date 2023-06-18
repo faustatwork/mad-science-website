@@ -80,7 +80,7 @@ const Index: NextPage = () => {
           </div>
         </div>
         <iframe
-          className="h-[28rem] w-6/12 rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 lg:w-9/12 sm:w-full"
+          className="h-[28rem] w-[60rem] rounded-lg border border-gray-200 shadow shadow-black/5 dark:border-gray-600 dark:shadow-white/5 2xl:w-6/12 lg:w-9/12 sm:w-full"
           src="https://www.youtube-nocookie.com/embed/GHKC3fcMBaE"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
