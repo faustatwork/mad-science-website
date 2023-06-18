@@ -195,8 +195,9 @@ const Index: NextPage = () => {
             Partneri
           </p>
           <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
-            Partnerisali smo se s tvrtkama navedenim ispod, iskoristite naš kod
-            &apos;MADSCIENCE&apos; na njihovoj platformi za nešto i nešto.
+            Partneri smo sa Finotive Funding prop firmom, iskoristite naš kupon
+            kod &apos;&apos;MADSCIENCE&apos;&apos; za dodatnih 5% popusta i 5%
+            profit split.
           </p>
           <Partners
             items={[
