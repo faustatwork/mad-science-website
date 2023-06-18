@@ -93,7 +93,7 @@ const Index: NextPage = () => {
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
-            Tko smo mi?
+            O nama
           </p>
           <div className="flex flex-row flex-wrap items-center justify-center gap-6">
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
@@ -135,10 +135,10 @@ const Index: NextPage = () => {
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
         >
           <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
-            Što kažu ljudi o nama
+            Šta kažu ljudi o nama
           </p>
           <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
-            Uzmite njihovu riječ, ne našu.
+            Uzmite njihovu reč, ne našu.
           </p>
           <Testimonial
             content={[
