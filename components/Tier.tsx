@@ -5,7 +5,7 @@ import { ShoppingCart } from "lucide-react";
 
 interface TierProps {
   title: string;
-  description: string;
+  description?: string;
   features: string[];
   models: Model[];
   recommended?: boolean;
@@ -46,7 +46,6 @@ const Tier = ({
         title={`Kupi ${title} edukaciju ($${
           getAmountForInterval() ?? models[0].amount
         } - ${recurringInterval ?? models[0].interval})`}
-        desc={"Opis"}
       />
       <div
         className={
@@ -55,10 +54,12 @@ const Tier = ({
         }
         key={title}
       >
-        <p className="mb-4 text-2xl font-semibold">{title}</p>
-        <p className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-          {description}
-        </p>
+        <p className="text-2xl font-semibold">{title}</p>
+        {description ? (
+          <p className="mt-4 font-light text-gray-500 dark:text-gray-400 sm:text-lg">
+            {description}
+          </p>
+        ) : null}
         <div className="my-8 flex items-center justify-center">
           <span className="mr-2 text-4xl font-extrabold sm:text-3xl">
             $

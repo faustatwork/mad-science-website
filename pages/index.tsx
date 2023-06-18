@@ -216,19 +216,15 @@ const Index: NextPage = () => {
           <p className="text-center text-4xl font-bold text-black dark:text-white md:text-2xl">
             Edukacija
           </p>
-          <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
-            Opis
-          </p>
+
           <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
             <Tier
               title={"Essentials"}
-              description={"Opis"}
               features={["Osnove tehničke analize", "Popust za Level 2.0"]}
               models={[{ interval: "jednokratno", amount: 44 }]}
             />
             <Tier
               title={"Level 2.0"}
-              description={"Opis"}
               features={[
                 "MAD Concept",
                 "GC Algo Concept",
