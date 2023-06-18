@@ -14,7 +14,7 @@ interface PaymentDialogProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
   title: string;
-  desc: string;
+  desc?: string;
 }
 
 const PaymentDialog = ({
@@ -74,9 +74,11 @@ const PaymentDialog = ({
                   >
                     {title}
                   </Dialog.Title>
-                  <div className="mt-5 text-center">
-                    <p className="w-full text-sm text-gray-500">{desc}</p>
-                  </div>
+                  {desc ? (
+                    <div className="mt-5 text-center">
+                      <p className="w-full text-sm text-gray-500">{desc}</p>
+                    </div>
+                  ) : null}
                   <div className="mt-5">
                     <Image
                       src={theme.resolvedTheme === "dark" ? qrDark : qrLight}
@@ -92,11 +94,8 @@ const PaymentDialog = ({
                     <CopyBlock value="TBXic6mWhJcet2TdnDdzKhPiX867FDxrnd" />
                   </div>
                   <div className="mt-6 flex flex-row items-center justify-center gap-5">
-                    <AlertCircle
-                      size={24}
-                      className="text-gray-400 dark:text-gray-600"
-                    />
-                    <p className="w-full text-sm text-gray-400 dark:text-gray-600">
+                    <AlertCircle size={24} className="text-gray-500" />
+                    <p className="w-full text-sm text-gray-500">
                       Da biste dobili pristup kursu, potrebno je nakon uplate
                       javiti se adminu putem Telegrama klikom{" "}
                       <Link
