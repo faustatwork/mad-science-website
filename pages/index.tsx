@@ -26,7 +26,7 @@ const Index: NextPage = () => {
       <Navbar />
       <div
         id="hero"
-        className="mb-4 flex min-h-screen max-w-[130rem] flex-row items-center justify-between bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark 2xl:w-full lg:mb-20 lg:flex-col lg:justify-center lg:gap-10 lg:pt-40 lg:text-center sm:px-10"
+        className="mb-4 flex min-h-screen max-w-[130rem] flex-row items-center justify-center bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark 2xl:w-full 2xl:justify-between lg:mb-20 lg:flex-col lg:justify-center lg:gap-10 lg:pt-40 lg:text-center sm:px-10"
       >
         <div className="flex h-full flex-col items-start justify-center gap-8 lg:items-center sm:gap-5">
           <Link
