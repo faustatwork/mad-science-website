@@ -196,7 +196,7 @@ const Index: NextPage = () => {
           </p>
           <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
             Partneri smo sa Finotive Funding prop firmom, iskoristite naš kupon
-            kod &apos;&apos;MADSCIENCE&apos;&apos; za dodatnih 5% popusta i 5%
+            kod &apos;&apos;MADSCIENCE&apos;&apos; za dodatnih 13% popusta i 5%
             profit split.
           </p>
           <Partners
