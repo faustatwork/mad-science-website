@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
 import { Book } from "lucide-react";
 import Image from "next/image";
 import logo from "../public/brand/logo.webp";
@@ -8,7 +7,6 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isWindowSizeSmall = useMediaQuery("(max-width: 1075px)");
 
   const navLinks = (
     <>
@@ -41,20 +39,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div
-        className={
-          isWindowSizeSmall
-            ? "absolute z-50 flex w-screen flex-col items-center justify-between p-10 text-gray-800 dark:text-gray-200"
-            : "absolute z-50 flex w-screen flex-row items-center justify-between px-20 py-10 text-gray-800 dark:text-gray-200"
-        }
-      >
-        <div
-          className={
-            isWindowSizeSmall
-              ? "flex w-full flex-row justify-between"
-              : "hidden"
-          }
-        >
+      <div className="absolute z-50 flex w-screen flex-row items-center justify-between px-20 py-10 text-gray-800 dark:text-gray-200 md:flex-col md:p-10">
+        <div className="hidden md:flex md:w-full md:flex-row md:justify-between">
           <motion.button
             whileHover={{ scale: 1.1 }}
             onClick={() => setIsOpen(!isOpen)}
@@ -97,30 +83,20 @@ const Navbar = () => {
         </div>
         <Link
           href={"/"}
-          className={
-            isWindowSizeSmall
-              ? "hidden"
-              : "flex flex-row items-center justify-center gap-5 text-xl font-bold"
-          }
+          className="flex flex-row items-center justify-center gap-5 text-xl font-bold md:hidden"
         >
           <Image alt="Mad Science logo" src={logo} height={30} quality={100} />
           Mad Science
         </Link>
         <ul
-          className={
-            isWindowSizeSmall
-              ? "absolute mt-[4.5rem] h-[90vh] w-full list-none flex-col items-start justify-start gap-10 bg-gray-200 p-10 text-white dark:bg-zinc-900" +
-                (isOpen ? " flex" : " hidden")
-              : "flex list-none flex-row items-center justify-center gap-10"
-          }
+          className={`list-none text-white md:absolute md:mt-[4.5rem] md:h-[90vh] md:w-full md:flex-col md:items-start md:justify-start md:gap-10 md:bg-gray-200 md:p-10 md:dark:bg-zinc-900 
+        ${
+          isOpen ? "md:flex" : "md:hidden"
+        } flex flex-row items-center justify-center gap-10`}
         >
           {navLinks}
           <Link
-            className={
-              isWindowSizeSmall
-                ? "w-full rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary"
-                : "hidden"
-            }
+            className="hidden w-full rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary md:block"
             href={"/edukacija"}
           >
             <span className="mr-2 inline-block align-middle">
@@ -130,11 +106,7 @@ const Navbar = () => {
           </Link>
         </ul>
         <Link
-          className={
-            isWindowSizeSmall
-              ? "hidden"
-              : "rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary"
-          }
+          className="rounded-md bg-brand-primary px-3 py-2 text-center text-base font-medium text-white transition hover:scale-105 hover:bg-brand-hover hover:shadow-xl focus:ring-4 focus:ring-brand-secondary md:hidden"
           href={"/edukacija"}
         >
           <span className="mr-2 inline-block align-middle">
