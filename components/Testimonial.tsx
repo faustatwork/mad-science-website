@@ -21,51 +21,47 @@ const Testimonial = ({ content }: TestimonialProps) => {
   const isSmall = useMediaQuery("(max-width: 1025px)");
 
   return (
-    <>
-      <Swiper
-        slidesPerView={!isSmall ? 3 : 1}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper h-full w-full"
-      >
-        {content.map((item, index) => {
-          return (
-            <>
-              <SwiperSlide key={index}>
-                <div className="flex h-full flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 text-start shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
-                  <p className="leading-relaxed text-gray-700 dark:text-gray-200">
-                    {item.message}
+    <Swiper
+      slidesPerView={!isSmall ? 3 : 1}
+      spaceBetween={30}
+      pagination={{
+        clickable: true,
+      }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
+      className="mySwiper h-full w-full"
+    >
+      {content.map((item, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <div className="flex h-full flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 text-start shadow shadow-black/5 dark:border-gray-600 dark:bg-gray-800 dark:shadow-white/5">
+              <p className="leading-relaxed text-gray-700 dark:text-gray-200">
+                {item.message}
+              </p>
+              <div className="mt-4 flex items-center gap-4">
+                <Image
+                  alt="testimonial user avatar"
+                  src={item.avatar}
+                  width={128}
+                  height={128}
+                  quality={100}
+                  className="h-12 w-12 rounded-full object-cover"
+                />
+                <div className="text-sm text-black dark:text-white">
+                  <p className="font-medium">{item.user}</p>
+                  <p className="font-normal text-gray-500 dark:text-gray-400">
+                    {item.position}
                   </p>
-                  <div className="mt-4 flex items-center gap-4">
-                    <Image
-                      alt="testimonial user avatar"
-                      src={item.avatar}
-                      width={128}
-                      height={128}
-                      quality={100}
-                      className="h-12 w-12 rounded-full object-cover"
-                    />
-                    <div className="text-sm text-black dark:text-white">
-                      <p className="font-medium">{item.user}</p>
-                      <p className="font-normal text-gray-500 dark:text-gray-400">
-                        {item.position}
-                      </p>
-                    </div>
-                  </div>
                 </div>
-              </SwiperSlide>
-            </>
-          );
-        })}
-      </Swiper>
-    </>
+              </div>
+            </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 };
 

@@ -52,7 +52,6 @@ const Tier = ({
           isRecommended +
           "flex w-[22rem] flex-col rounded-lg bg-white text-center text-gray-900 dark:bg-gray-800 dark:text-white xl:w-72 lg:w-96 sm:w-full"
         }
-        key={title}
       >
         <p className="text-2xl font-semibold">{title}</p>
         {description ? (
@@ -71,11 +70,11 @@ const Tier = ({
               value={recurringInterval ?? models[0].interval}
               onChange={e => setRecurringInterval(e.target.value)}
             >
-              {models.map(e => {
+              {models.map((e, index) => {
                 return (
-                  <>
-                    <option value={e.interval}>{e.interval}</option>
-                  </>
+                  <option key={index} value={e.interval}>
+                    {e.interval}
+                  </option>
                 );
               })}
             </select>
