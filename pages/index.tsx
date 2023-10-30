@@ -220,7 +220,7 @@ const Index: NextPage = () => {
           <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
             <Tier
               title={"Essentials"}
-              features={["Osnove tehničke analize", "Popust za Level 2.0"]}
+              features={["Osnove tehničke analize"]}
               models={[{ interval: "jednokratno", amount: 44 }]}
             />
             <Tier
