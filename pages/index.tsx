@@ -10,6 +10,8 @@ import { ShoppingCart, Info, Verified, Film } from "lucide-react";
 import Newsletter from "../components/Newsletter";
 import Partners from "../components/Partners";
 import { FinotiveLogo } from "../components/Logos";
+import Image from "next/image";
+import TFTLogo from "../public/brand/tft.webp";
 
 const Index: NextPage = () => {
   return (
@@ -184,6 +186,62 @@ const Index: NextPage = () => {
                   "Da i ja dam neko svoje mišljenje, nikada nisam gledao i vidio po videima da netko koristi fib na log chartu tako da za prvu epizodu to je meni otkriće i onda kad se jos poveže s vremenom vidi se nadopunjavanje istih. Nastavliam dalje s gledanjem pa javljam kako mi se svidi, a za sada je super!",
                 avatar: "/testimonials/leokuna.webp",
               },
+              {
+                user: "K F",
+                position: "Level 2.0 polaznik",
+                message:
+                  "kao pro bih se zahvalio Edinu i mentorima u MadSciencu sto su se udruzili i omogucili clanovima BM free chi, sto je meni napokon probilo led, jer sam vec prije razmisjao da uzmem tu edukaciju i samo nikako da odlucim, kao drugo, u chi se spominju stvari koje nikad nisam cuo u godinu i pol dana od kad sam cuo za forex i prosao par edukacija, zavrsio free ch1 i definitivno nastavljam dalje sa edukacijom... mnogo opsirne lekcije i znanje koje zelim steci, a jerujem da sam na pravom mjestu za to...",
+                avatar: "/testimonials/kf.webp",
+              },
+              {
+                user: "Stefan",
+                position: "Level 2.0 polaznik",
+                message:
+                  "vec godinu i jace sam u trejdanju bio sam kod raznih poznatih kao mentora na balkanu koji mi nisu pomogli u opste i tu mogu reci da sam dosta novca izgubio. gledao sam sa interneta poznatog ict i na njemu sam se zadrzo ali nakon nekog vremena sam skapirao da ima mnogo nejasnih stvari koje su me zbunjivale na chartu. Igrom slucajeva sam saznao za ovu edukaciju i nasao pravog mentora @gcalgo koji mi je otkrio novi svet u ovome i pomogo mi da razumem ceo market kako funkcionise, i naravno nesto jos bitnije kakva treba da bude prava mind profitabilnog trejdera. naravno tu su i ostali mentori koji pomazu u svakom trenutku. Sada sam u chapteru 5 prezadovoljan sam i ako docete u dodir sa losim trejdom to je samo zato sto niste hteli da slusate svog mentora. Jedino mi je zao sto ovde nisam ranije doso i sto ce neko provesti dosta veci period u trazenju prave edukacije dok ne doce ovde",
+                avatar: "/testimonials/stefan.webp",
+              },
+              {
+                user: "Mume",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Sve znas sto se tice mog hrabrog poteza i (privremenog) napustanja faksa kako bih se posvetio necemu sto volim, posle x broja grupa, mentorshipa i pokusaja, konacho sam dosao do kraja, sada sa pravim ljudima napredujem bolje nego ikad u zivotu, trenutno chapter 3 polaznik, a materije koje su rangu fakultetskih lekcija su jos lude, pojedine lekcije se moraju gledati nekoliko puta da bi se obradila kompleksna sustina, uz sav taj profesionalni pristup, tu je @gcalgo i ostali mentori koji dodatno objasjavaju i pomazu u svemu sto treba mentorship je pun pogodak",
+                avatar: "/testimonials/mume.webp",
+              },
+              {
+                user: "Djomla17",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Nakon mogo pokusaja i svakakvih strategija koje su donosile rezultate, ali ne dugorone, sada mislim da sam napokon uz @gcalgo pronasao edge koji ce me uz rad na psihologiji dovesti do konstantne profitabilnosti. Sto se tie zanja koje sam stekao kroz chaptere, to nigde drugde nisam video tako jednostavno objasjeno da svako moze da razume. Ono sto moram da napomenem je da je Gory takode stalno tu za svako pitanje i za sve nedoumice, nije ono kao snimio sam vam videe pa se snalazite, a to mogo znaci. Totalno mi je promenio nacin na koji gledam na trejdovanje i naucio me strpljenju. Iz dana u dan gledam kako postajem bolji i kako sam sve blizi tome da jednoga dana od ovoga i zivim. Hvala na svemu",
+                avatar: "/testimonials/djomla.webp",
+              },
+              {
+                user: "Vito",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Evo da se i ja oglasim povodom mentorshipa Goryja znam vec jako dugo i kao prijateli i kao mentor od pocetka je bio odlican Sto se tice mentorshipa - 10/10 Cijeli sistem od A do Z, jednostavan, treba vremena da se pohvata ali kad klikne...wow Prosao sam ICTijev content prije ovog mentorshipa ali nesto je falilo - to nesto je sistem Ovaj mentorship to sreduje i slaze te koncepte na mjesto Od mene sve preporuke, tako da batalite tamo neke gurue, patterne i tzv. edukacije, ovo je prava prica koju nema nitko drugi kod nas",
+                avatar: "/testimonials/vito.webp",
+              },
+              {
+                user: "Darjan Belak",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Evo da dam i ja svoj utisak za ovih otprilike 5 meseci, nesto vise. U pocetku sam bio u jednoj edkuacij u kojoj sam se zadrzao dve godine i nisam imao nikakvih uspeha. Kasnije sam preko jednog storija cuo za madscience grupu l odmah me je tu nesto privuklo I tako sam poceoo sa Gorijem ,go algo koncept. Vec posle nekoliko nedelja sam imao uspesnih trejdova sto mi je bilo neverovatno kao I taj koncept kad sam video sta sve ne znam ustvari.Ima jako puno informacija ali kad se sve to poveze onda je sve jednostavno, takodje je i Gori uvek tu bio sta god je trebalo za svaku nedoumicu ili bilo sta drugo. Svako ko udje u ovu grupu nece sigurno zaliti! Sve ja na vrhunskom nivou! 10/10",
+                avatar: "/testimonials/darjan.webp",
+              },
+              {
+                user: "Delayl",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Stvarno moram da pohvalim sve sto se tice ove edukacije. U svim mogucim edukacijama sam bio ali ovakav koncept i da se ovako ucenicima objasjava nisam vidio nigdje. Uvijek se uzme vrijeme za ucenike da se objasni neka star pa ako treba i po 5 puta stvarno sve pohvale.",
+                avatar: "/testimonials/default.webp",
+              },
+              {
+                user: "WMO",
+                position: "Level 2.0 polaznik",
+                message:
+                  "Zahvaljujuci mom mentor @gcalgo drzim rekord na Finotive u isplatama Tko god se dvoumi, neka upada odmah kod ekipe u mentorship, bolje necete naci",
+                avatar: "/testimonials/wmo.webp",
+              },
             ]}
           />
         </section>
@@ -197,7 +255,8 @@ const Index: NextPage = () => {
           <p className="text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
             Partneri smo sa Finotive Funding prop firmom, iskoristite naš kupon
             kod &apos;&apos;MADSCIENCE&apos;&apos; za dodatnih 13% popusta i 5%
-            profit split.
+            profit split. Takodje, partneri smo sa The Funded Trader prop
+            firmom, iskoristite naš link za popust klikom na njihov logo ispod.
           </p>
           <Partners
             items={[
@@ -205,6 +264,18 @@ const Index: NextPage = () => {
                 logo: <FinotiveLogo />,
                 link: "https://finotivefunding.com/",
                 label: "Finotive Funding website link",
+              },
+              {
+                logo: (
+                  <Image
+                    width={58}
+                    src={TFTLogo}
+                    alt="tft logo"
+                    className="hover:brightness-150"
+                  />
+                ),
+                link: "https://dashboard.thefundedtraderprogram.com/purchasechallenge-n/?sl=17572",
+                label: "TFT affiliate website link",
               },
             ]}
           />
@@ -234,9 +305,9 @@ const Index: NextPage = () => {
                 "Daily updates",
               ]}
               models={[
-                { interval: "1 mjesec", amount: 80 },
-                { interval: "3 mjeseca", amount: 224 },
-                { interval: "6 mjeseci", amount: 440 },
+                { interval: "1 chapter", amount: 80 },
+                { interval: "3 chaptera", amount: 224 },
+                { interval: "6 chaptera", amount: 440 },
               ]}
             />
           </div>
