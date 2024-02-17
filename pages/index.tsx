@@ -98,11 +98,11 @@ const Index: NextPage = () => {
           <div className="flex flex-row flex-wrap items-center justify-center gap-6">
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
               <Verified size={22} className="stroke-[#009dff]" />
-              Preko 20+ zadovoljnih polaznika
+              Preko 300+ zadovoljnih polaznika
             </div>
             <div className="flex flex-row items-center gap-x-2 text-base text-gray-500">
               <Film size={22} className="stroke-[#7432c9]" />
-              Preko 40+ sati kontenta
+              Preko 50+ sati kontenta
             </div>
           </div>
           <p className="max-w-6xl text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
@@ -217,7 +217,7 @@ const Index: NextPage = () => {
             Edukacija
           </p>
 
-          <div className="flex w-full flex-row flex-wrap items-center justify-center gap-20 xl:gap-16 lg:flex-col">
+          <div className="items-atretch flex w-full flex-row flex-wrap justify-center gap-20 xl:gap-16 md:flex-col">
             <Tier
               title={"Essentials"}
               features={["Osnove tehničke analize"]}
@@ -238,14 +238,6 @@ const Index: NextPage = () => {
                 { interval: "3 mjeseca", amount: 224 },
                 { interval: "6 mjeseci", amount: 440 },
               ]}
-              recommended
-            />
-            <Tier
-              title={"Level 3.0"}
-              description={"Dolazi uskoro."}
-              features={["Pristup privatnom Discord serveru"]}
-              models={[{ interval: "jednokratno", amount: 999 }]}
-              disabled
             />
           </div>
         </section>
@@ -265,7 +257,7 @@ const Index: NextPage = () => {
                 {
                   question: "Šta je Mad Science?",
                   answer:
-                    "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 4 profitabilna trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
+                    "Grupa osnovana u cilju deljenja znanja pre svega početnicima, a i naprednima u cilju sticanja i usavršavanja znanja. Osnovana od strane 5  trejdera koji imaju preko 7 godina iskustva na tržištu crypto valuta i forex-a sa vrlo unikatnim pristupom.",
                 },
                 {
                   question: "Šta možemo naučiti?",
