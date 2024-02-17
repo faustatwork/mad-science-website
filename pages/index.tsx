@@ -69,7 +69,7 @@ const Index: NextPage = () => {
               Kupi kurs
             </Link>
             <Link
-              className="rounded-md border-2 border-brand-primary px-5 py-3 text-lg font-medium text-brand-primary transition hover:scale-105  hover:border-transparent hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
+              className="-primary rounded-md px-5 py-3 text-lg font-medium text-brand-primary transition hover:scale-105  hover:border-transparent hover:bg-brand-hover hover:text-white hover:shadow-xl focus:ring-4 focus:ring-brand-secondary sm:px-3 sm:text-base"
               href={"#onama"}
             >
               <span className="mr-2 inline-block align-middle">
