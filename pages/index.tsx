@@ -12,8 +12,11 @@ import Partners from "../components/Partners";
 import { FinotiveLogo } from "../components/Logos";
 import Image from "next/image";
 import TFTLogo from "../public/brand/tft.webp";
+import React, { useState } from "react";
 
 const Index: NextPage = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <Head>
@@ -107,30 +110,43 @@ const Index: NextPage = () => {
               Preko 50+ sati kontenta
             </div>
           </div>
-          <p className="max-w-6xl text-center text-xl text-gray-500 dark:text-gray-400 md:text-base">
-            Mad Science čine četiri konstanto profitabilna trejdera koji imaju
-            iste ciljeve, vrlo slično razmišljaju, imaju vrlo specifične
-            pristupe marketu, a opet dolaze do istih rezultata. Zapravo, mi
-            funkcionišemo kao jedan mini DAO (Decentralized Autonomous
-            Organisation) gde svako iznese svoje mišljenje i analizu, a ukoliko
-            se sve analize se poklapaju jedna sa drugom, to nam je još jedna
-            konfirmacija za ulazak u trejd. To je Mad Science pre Mad Science-a,
-            naš sami početak. Oni koji su prepoznali naš rad i znanje koje imamo
-            su želeli da nauče isto to, zanimalo ih je kako mi to radimo, po kom
-            principu. Takodje su tražili i mentoring. Odlučili smo da to znanje
-            koje imamo nesebično podelimo sa drugim trejderima kojima je
-            potrebna pomoć. Ideja se rodila upravo iz toga, vi ste to tražili od
-            nas! Kako bismo svima bili dostupni i kako bi svako mogao da čuje
-            naše mišljenje i analize, napravili smo javnu grupu na Telegramu gde
-            su svi koji žele nešto novo da nauče dobrodošli. Sam mentoring bi
-            oduzimao puno vremean kako je potražnja za njim velika. Došli smo do
-            zaključka da je najbolje snimiti lekcije u video formatu koje će
-            svima biti dostupne u svakom momentu kako bismo jedni drugima
-            uštedeli dragoceno vreme i kako bi se vi mogli da se podsetite uvek
-            ono što ste možda zaboravili ili tek učite. Sve u svemu, ovo je bila
-            kratka priča o tome kako je nastao Mad Science i ko smo mi, neka
-            naša dela govore o nama!
-          </p>
+          <div className="flex max-w-6xl flex-col gap-3">
+            <p
+              className={`text-center text-xl text-gray-500 dark:text-gray-400 md:text-base ${
+                isExpanded ? "" : "sm:line-clamp-6"
+              }`}
+            >
+              Mad Science čine četiri konstanto profitabilna trejdera koji imaju
+              iste ciljeve, vrlo slično razmišljaju, imaju vrlo specifične
+              pristupe marketu, a opet dolaze do istih rezultata. Zapravo, mi
+              funkcionišemo kao jedan mini DAO (Decentralized Autonomous
+              Organisation) gde svako iznese svoje mišljenje i analizu, a
+              ukoliko se sve analize se poklapaju jedna sa drugom, to nam je još
+              jedna konfirmacija za ulazak u trejd. To je Mad Science pre Mad
+              Science-a, naš sami početak. Oni koji su prepoznali naš rad i
+              znanje koje imamo su želeli da nauče isto to, zanimalo ih je kako
+              mi to radimo, po kom principu. Takodje su tražili i mentoring.
+              Odlučili smo da to znanje koje imamo nesebično podelimo sa drugim
+              trejderima kojima je potrebna pomoć. Ideja se rodila upravo iz
+              toga, vi ste to tražili od nas! Kako bismo svima bili dostupni i
+              kako bi svako mogao da čuje naše mišljenje i analize, napravili
+              smo javnu grupu na Telegramu gde su svi koji žele nešto novo da
+              nauče dobrodošli. Sam mentoring bi oduzimao puno vremean kako je
+              potražnja za njim velika. Došli smo do zaključka da je najbolje
+              snimiti lekcije u video formatu koje će svima biti dostupne u
+              svakom momentu kako bismo jedni drugima uštedeli dragoceno vreme i
+              kako bi se vi mogli da se podsetite uvek ono što ste možda
+              zaboravili ili tek učite. Sve u svemu, ovo je bila kratka priča o
+              tome kako je nastao Mad Science i ko smo mi, neka naša dela govore
+              o nama!
+            </p>
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="hidden self-end text-black transition hover:text-black/50 dark:text-white/50 dark:hover:text-white sm:block"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+          </div>
         </section>
         <section
           id="recenzije"
