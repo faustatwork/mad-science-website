@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="absolute z-50 flex w-screen flex-row items-center justify-between px-20 py-10 text-gray-800 dark:text-gray-200 md:flex-col md:p-10">
+      <div className="absolute z-50 flex w-screen flex-row items-center justify-between px-20 py-10 text-gray-800 dark:text-gray-200 md:flex-col md:px-7 md:py-10">
         <div className="hidden md:flex md:w-full md:flex-row md:justify-between">
           <motion.button
             whileHover={{ scale: 1.1 }}

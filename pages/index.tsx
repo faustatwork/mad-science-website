@@ -26,7 +26,7 @@ const Index: NextPage = () => {
       <Navbar />
       <div
         id="hero"
-        className="mb-4 flex min-h-screen w-full flex-row items-center justify-center gap-80 bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark 2xl:justify-between 2xl:gap-0 lg:mb-20 lg:flex-col lg:justify-center lg:gap-10 lg:pt-40 lg:text-center sm:px-10"
+        className="mb-4 flex min-h-screen w-full flex-row items-center justify-center gap-80 bg-light bg-cover bg-center bg-no-repeat px-24 dark:bg-dark 2xl:justify-between 2xl:gap-0 lg:mb-20 lg:flex-col lg:justify-center lg:gap-10 lg:pt-40 lg:text-center sm:px-5"
       >
         <div className="flex h-full flex-col items-start justify-center gap-8 lg:items-center sm:gap-5">
           <Link
@@ -87,7 +87,7 @@ const Index: NextPage = () => {
           allowFullScreen
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-10">
+      <div className="flex flex-col items-center justify-center gap-44 px-20 sm:gap-36 sm:px-5">
         <section
           id="onama"
           className="flex w-full flex-col items-center justify-center gap-10 text-center"
@@ -217,7 +217,7 @@ const Index: NextPage = () => {
             Edukacija
           </p>
 
-          <div className="items-atretch flex w-full flex-row flex-wrap justify-center gap-20 xl:gap-16 md:flex-col">
+          <div className="items-atretch flex w-full flex-row flex-wrap justify-center gap-10 md:flex-col">
             <Tier
               title={"Essentials"}
               features={["Osnove tehničke analize"]}
