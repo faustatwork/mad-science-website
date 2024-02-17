@@ -256,7 +256,8 @@ const Index: NextPage = () => {
             Partneri smo sa Finotive Funding prop firmom, iskoristite naš kupon
             kod &apos;&apos;MADSCIENCE&apos;&apos; za dodatnih 13% popusta i 5%
             profit split. Takodje, partneri smo sa The Funded Trader prop
-            firmom, iskoristite naš link za popust klikom na njihov logo ispod.
+            firmom, iskoristite naš link za popust + profit split klikom na
+            njihov logo ispod.
           </p>
           <Partners
             items={[
